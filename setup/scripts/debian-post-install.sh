@@ -187,6 +187,7 @@ RUNCMD "crontab -l > $CRON_TEMPFILE"
 RUNCMD "touch $CRON_TEMPFILE"
 RUNCMD "cat $SETUP_RESOURCES_DIR/crontab >> $CRON_TEMPFILE"
 RUNCMD "crontab $CRON_TEMPFILE"
+RUNCMD "rm $CRON_TEMPFILE"
 
 log_title - ----------------------------------------------------------------------------
 log_title -
