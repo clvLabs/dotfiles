@@ -73,7 +73,6 @@ log_title -
 log_title - [$APP_NAME] Installing software
 log_title -
 
-# --------------------------------------------------------------------------------------------------
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -
 log_highlight - [$APP_NAME] Installing package list for: apt
@@ -81,7 +80,6 @@ log_highlight -
 APT_INSTALL=$(echo $(sed "s/#.*$//g" $SETUP_RESOURCES_DIR/apt-install.txt | cat))
 RUNCMD "DEBIAN_FRONTEND=noninteractive sudo apt -y install $APT_INSTALL"
 
-# --------------------------------------------------------------------------------------------------
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -
 log_highlight - [$APP_NAME] Installing package list for: snap
@@ -89,7 +87,6 @@ log_highlight -
 SNAP_INSTALL=$(echo $(sed "s/#.*$//g" $SETUP_RESOURCES_DIR/snap-install.txt | cat))
 RUNCMD "sudo snap install $SNAP_INSTALL"
 
-# --------------------------------------------------------------------------------------------------
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -
 log_highlight - [$APP_NAME] Installing package list for: snap --classic
@@ -97,7 +94,6 @@ log_highlight -
 SNAP_INSTALL=$(echo $(sed "s/#.*$//g" $SETUP_RESOURCES_DIR/snap-classic-install.txt | cat))
 RUNCMD "sudo snap install $SNAP_INSTALL --classic"
 
-# --------------------------------------------------------------------------------------------------
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -
 log_highlight - [$APP_NAME] Installing package list for: pip
@@ -105,7 +101,6 @@ log_highlight -
 PIP_INSTALL=$(echo $(sed "s/#.*$//g" $SETUP_RESOURCES_DIR/pip-install.txt | cat))
 RUNCMD "pip3 install $PIP_INSTALL"
 
-# --------------------------------------------------------------------------------------------------
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -
 log_highlight - [$APP_NAME] Installing specific package: vscode
@@ -115,7 +110,6 @@ RUNCMD "echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://p
 RUNCMD "sudo apt update"
 RUNCMD "sudo apt -y install code"
 
-# --------------------------------------------------------------------------------------------------
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -
 log_highlight - [$APP_NAME] Installing specific package: brave-browser
@@ -126,7 +120,6 @@ RUNCMD "echo 'deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.g
 RUNCMD "sudo apt update"
 RUNCMD "sudo apt -y install brave-browser"
 
-# --------------------------------------------------------------------------------------------------
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -
 log_highlight - [$APP_NAME] Installing specific package: spaceship-prompt
@@ -136,7 +129,6 @@ RUNCMD "sudo mkdir -p $ZSH_CONFIG_BASE/themes"
 RUNCMD "sudo chown $USER:$USER $ZSH_CONFIG_BASE/themes"
 RUNCMD "git clone https://github.com/denysdovhan/spaceship-prompt.git $ZSH_CONFIG_BASE/themes/spaceship-prompt"
 
-# --------------------------------------------------------------------------------------------------
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -
 log_highlight - [$APP_NAME] Installing specific package: zsh-syntax-highlighting
@@ -151,29 +143,52 @@ log_title -
 log_title - [$APP_NAME] Configuring system
 log_title -
 
-# --------------------------------------------------------------------------------------------------
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
 log_highlight - [$APP_NAME] Setting ZSH as default shell
+log_highlight -
 RUNCMD "chsh -s $(which zsh)"
 
-# --------------------------------------------------------------------------------------------------
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
 log_highlight - [$APP_NAME] Creating SSH key
+log_highlight -
 RUNCMD "ssh-keygen -t rsa -C 'onixag@gmail.com'"
 
-# --------------------------------------------------------------------------------------------------
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
 log_highlight - [$APP_NAME] Granting access to serial ports
+log_highlight -
 RUNCMD "sudo usermod -a -G dialout $USER"
+
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
+log_highlight - [$APP_NAME] Configuring motd
+log_highlight -
+
+RUNCMD "sudo chown $USER:$USER /etc/motd"
+
+CRON_TEMPFILE=$(mktemp)
+RUNCMD "crontab -l > $CRON_TEMPFILE"
+RUNCMD "touch $CRON_TEMPFILE"
+RUNCMD "cat $SETUP_RESOURCES_DIR/crontab >> $CRON_TEMPFILE"
+RUNCMD "crontab $CRON_TEMPFILE"
 
 log_title - ----------------------------------------------------------------------------
 log_title -
 log_title - [$APP_NAME] Installing dotfiles/utility scripts
 log_title -
 
-# --------------------------------------------------------------------------------------------------
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
 log_highlight - [$APP_NAME] Running dotfiles installer
+log_highlight -
 RUNCMD "$SETUP_SCRIPTS_DIR/dotfiles-install.sh"
 
-# --------------------------------------------------------------------------------------------------
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
 log_highlight - [$APP_NAME] Running utility script installer
+log_highlight -
 RUNCMD "$SETUP_SCRIPTS_DIR/utils-install.sh"
 
 # ############################################################################
