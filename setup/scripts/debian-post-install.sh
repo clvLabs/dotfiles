@@ -234,6 +234,12 @@ log_title -
 
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -
+log_highlight - [$APP_NAME] Copying static base configuration files
+log_highlight -
+RUNCMD "cp -rfv $SETUP_RESOURCES_DIR/.config $HOME/.config"
+
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
 log_highlight - [$APP_NAME] Running dotfiles installer
 log_highlight -
 RUNCMD "$SETUP_SCRIPTS_DIR/dotfiles-install.sh"

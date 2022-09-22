@@ -1,0 +1,40 @@
+{
+    "workbench.startupEditor": "none",
+    "files.trimTrailingWhitespace": true,
+    "editor.renderWhitespace": "all",
+    "editor.minimap.enabled": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.dragAndDrop": true,
+    "terminal.integrated.shell.linux": "/bin/zsh",
+    "terminal.integrated.fontSize": 16,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/__pycache__": true,
+        "**/node_modules": true
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "files.watcherExclude": {
+        "**/__pycache__/**": true
+    },
+    "python.jediEnabled": false,
+    "editor.mouseWheelZoom": true,
+    "workbench.activityBar.visible": true,
+    "workbench.editor.showTabs": true,
+    "python.linting.flake8CategorySeverity.W": "Error",
+    "python.linting.pycodestyleCategorySeverity.W": "Error",
+    "python.linting.pylintCategorySeverity.warning": "Error",
+    "python.linting.enabled": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "python.languageServer": "Pylance",
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "explorer.confirmDragAndDrop": false,
+    "terminal.external.linuxExec": "alacritty",
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.editor.untitled.hint": "hidden",
+    "editor.minimap.showSlider": "always",
+    "window.zoomLevel": 1
+}
