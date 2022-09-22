@@ -10,10 +10,10 @@ Files and folders under `config/home` will be symlinked into the user's home fol
 
 ## Utility scripts
 
-The `utility-scripts` folder contains all used scripts.
+The `scripts` folder contains all used scripts.
 
-* To install all of them, use `setup/scripts/utils-install.sh`.
-* To individually install scripts, see the [utility scripts README](utility-scripts/README.df).
+* To install all of them, use `setup/scripts/scripts-install.sh`.
+* To individually install scripts, see the [utility scripts README](./scripts/README.md).
 
 
 ## Setup
@@ -32,10 +32,10 @@ Call `dotfiles-install.sh` from the project folder:
 
 ### Utility scripts install on a non-fresh install.
 
-Call `utils-install.sh` from the project folder:
+Call `scripts-install.sh` from the project folder:
 
 ```
-~/.config/dotfiles $ setup/scripts/utils-install.sh
+~/.config/dotfiles $ setup/scripts/scripts-install.sh
 ```
 
 ### Post setup after a fresh Debian install.
@@ -46,7 +46,7 @@ Call `debian-post-install.sh` from the project folder:
 ~/.config/dotfiles $ setup/scripts/debian-post-install.sh
 ```
 
-This will automatically call `dotfiles-install` and `utils-install`.
+This will automatically call `dotfiles-install` and `scripts-install`.
 
 #### Change screen resolution
 

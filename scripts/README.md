@@ -7,7 +7,7 @@ This folder contains utility scripts made to be available in `$PATH` (without th
 * Script name must be specified **without** `.sh`.
 * This will create a `symlink` for the script in `~/bin`.
 ```
-~/.config/dotfiles/utility-scripts $ ./_install.sh new_script_name
+~/.config/dotfiles/scripts $ ./_install.sh new_script_name
 ```
 
 ## Uninstalling a script
@@ -15,5 +15,5 @@ This folder contains utility scripts made to be available in `$PATH` (without th
 * Script name must be specified **without** `.sh`.
 * This will remove the `symlink` for the script in `~/bin`.
 ```
-~/.config/dotfiles/utility-scripts $ ./_uninstall.sh some_script_name
+~/.config/dotfiles/scripts $ ./_uninstall.sh some_script_name
 ```

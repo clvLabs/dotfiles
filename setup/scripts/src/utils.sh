@@ -53,7 +53,7 @@ function abort_setup {
 PROJECT_BASE_DIR=$(readlink -f $THIS_SCRIPT_DIR/../..)
 EXPECTED_PROJECT_BASE_DIR=$(readlink -f "$HOME/.config/dotfiles")
 
-UTILITY_SCRIPTS_DIR=$PROJECT_BASE_DIR/utility-scripts
+UTILITY_SCRIPTS_DIR=$PROJECT_BASE_DIR/scripts
 CONFIG_DIR=$PROJECT_BASE_DIR/config
 
 SETUP_DIR=$PROJECT_BASE_DIR/setup

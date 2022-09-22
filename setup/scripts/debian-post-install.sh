@@ -248,7 +248,7 @@ log_highlight - ----------------------------------------------------------------
 log_highlight -
 log_highlight - [$APP_NAME] Running utility script installer
 log_highlight -
-RUNCMD "$SETUP_SCRIPTS_DIR/utils-install.sh"
+RUNCMD "$SETUP_SCRIPTS_DIR/scripts-install.sh"
 
 # ############################################################################
 #

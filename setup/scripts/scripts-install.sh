@@ -2,12 +2,12 @@
 
 # ############################################################################
 #
-# utils-install
+# scripts-install
 #
 # This script installs the utility scripts.
 #
 
-APP_NAME="utils-install"
+APP_NAME="scripts-install"
 THIS_SCRIPT_DIR=$(dirname "$(realpath "$0")")
 
 # Include source code
