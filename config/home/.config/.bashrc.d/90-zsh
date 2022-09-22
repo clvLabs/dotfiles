@@ -61,6 +61,8 @@ SPACESHIP_NODE_PREFIX=" \b"
 
 SPACESHIP_VENV_PREFIX=" \b"
 
+SPACESHIP_PROMPT_ASYNC=0
+
 source $ZSH_CONFIG_BASE/themes/spaceship-prompt/spaceship.zsh
 
 # syntax highlighting plugin
