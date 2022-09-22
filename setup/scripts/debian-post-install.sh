@@ -72,15 +72,14 @@ SNAP_INSTALL=$(echo $(sed "s/#.*$//g" $SETUP_RESOURCES_DIR/snap-install.txt | ca
 RUNCMD "sudo snap install $SNAP_INSTALL"
 
 # --------------------------------------------------------------------------------------------------
+log_highlight - [$APP_NAME] Installing package list for: snap --classic
+SNAP_INSTALL=$(echo $(sed "s/#.*$//g" $SETUP_RESOURCES_DIR/snap-classic-install.txt | cat))
+RUNCMD "sudo snap install $SNAP_INSTALL --classic"
+
+# --------------------------------------------------------------------------------------------------
 log_highlight - [$APP_NAME] Installing package list for: pip
 PIP_INSTALL=$(echo $(sed "s/#.*$//g" $SETUP_RESOURCES_DIR/pip-install.txt | cat))
 RUNCMD "pip3 install $PIP_INSTALL"
-
-# --------------------------------------------------------------------------------------------------
-log_highlight - [$APP_NAME] Installing specific package: alacritty
-RUNCMD "sudo add-apt-repository ppa:mmstick76/alacritty"
-RUNCMD "sudo apt update"
-RUNCMD "sudo apt install alacritty"
 
 # --------------------------------------------------------------------------------------------------
 log_highlight - [$APP_NAME] Installing specific package: vscode

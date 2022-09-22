@@ -1,0 +1,5 @@
+# snap-classic-install.txt
+# List of software to be installed using snap after OS install (using --classic)
+
+# Utils
+alacritty
