@@ -69,7 +69,6 @@ log_highlight - [$APP_NAME] Upgrading packages
 log_highlight -
 RUNCMD "DEBIAN_FRONTEND=noninteractive sudo apt -y upgrade"
 
-
 log_title - ----------------------------------------------------------------------------
 log_title -
 log_title - [$APP_NAME] Installing software
@@ -111,6 +110,19 @@ RUNCMD "wget -O- https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --
 RUNCMD "echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.microsoft.com/repos/vscode stable main | sudo tee /etc/apt/sources.list.d/vscode.list"
 RUNCMD "sudo apt update"
 RUNCMD "sudo apt -y install code"
+
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
+log_highlight - [$APP_NAME] Installing specific package: docker
+log_highlight -
+RUNCMD "sudo mkdir -p /etc/apt/keyrings"
+RUNCMD "curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg"
+RUNCMD "echo \"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable\" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null"
+RUNCMD "sudo apt update"
+RUNCMD "sudo apt -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin"
+RUNCMD "sudo groupadd docker"
+RUNCMD "sudo usermod -aG docker $USER"
+RUNCMD "newgrp docker"
 
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -

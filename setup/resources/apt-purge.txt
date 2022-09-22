@@ -67,3 +67,10 @@ mlterm
 mlterm-tiny
 xiterm+thai
 malcontent
+
+# Remove before installing docker
+docker
+docker-engine
+docker.io
+containerd
+runc

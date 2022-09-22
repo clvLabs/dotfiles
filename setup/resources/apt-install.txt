@@ -20,6 +20,11 @@ software-properties-common
 apt-transport-https
 wget
 
+# Added for: docker
+ca-certificates
+gnupg
+lsb-release
+
 # Dev tools
 build-essential
 cmake
