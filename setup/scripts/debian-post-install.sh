@@ -87,7 +87,7 @@ log_highlight - [$APP_NAME] Installing specific package: vscode
 RUNCMD "wget -O- https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor | sudo tee /usr/share/keyrings/vscode.gpg"
 RUNCMD "echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.microsoft.com/repos/vscode stable main | sudo tee /etc/apt/sources.list.d/vscode.list"
 RUNCMD "sudo apt update"
-RUNCMD "sudo apt install code"
+RUNCMD "sudo apt -y install code"
 
 # --------------------------------------------------------------------------------------------------
 log_highlight - [$APP_NAME] Installing specific package: brave-browser
@@ -95,7 +95,7 @@ RUNCMD "sudo apt install apt-transport-https curl"
 RUNCMD "sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg"
 RUNCMD "echo 'deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main'|sudo tee /etc/apt/sources.list.d/brave-browser-release.list"
 RUNCMD "sudo apt update"
-RUNCMD "sudo apt install brave-browser"
+RUNCMD "sudo apt -y install brave-browser"
 
 # --------------------------------------------------------------------------------------------------
 log_highlight - [$APP_NAME] Installing specific package: spaceship-prompt
