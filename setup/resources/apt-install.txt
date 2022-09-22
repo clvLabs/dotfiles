@@ -12,6 +12,9 @@ tree
 exa
 jq
 xclip
+software-properties-common
+apt-transport-https
+wget
 
 # Dev tools
 build-essential
