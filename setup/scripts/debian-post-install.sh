@@ -166,6 +166,23 @@ RUNCMD "sudo mkdir -p $ZSH_CONFIG_BASE/plugins"
 RUNCMD "sudo chown $USER:$USER $ZSH_CONFIG_BASE/plugins"
 RUNCMD "git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CONFIG_BASE/plugins/zsh-syntax-highlighting"
 
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
+log_highlight - [$APP_NAME] Installing specific package: dejavu-sans-mono-nerd-font
+log_highlight -
+
+OLDPWD=$PWD
+TEMP_FOLDER=$(mktemp -d)
+FONT_DEST_FOLDER=/usr/share/fonts/truetype/nerd-fonts/dejavu-sans-mono
+cd $TEMP_FOLDER
+RUNCMD "wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/DejaVuSansMono.zip"
+RUNCMD "sudo mkdir -p $FONT_DEST_FOLDER"
+cd $FONT_DEST_FOLDER
+RUNCMD "sudo unzip $TEMP_FOLDER/DejaVuSansMono.zip"
+cd $OLDPWD
+RUNCMD "sudo rm -rf $TEMP_FOLDER"
+RUNCME "fc-cache --force --verbose"
+
 log_title - ----------------------------------------------------------------------------
 log_title -
 log_title - [$APP_NAME] Configuring system

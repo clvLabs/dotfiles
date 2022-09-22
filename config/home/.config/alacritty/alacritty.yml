@@ -828,13 +828,13 @@ mouse:
 font:
   size: 10.0
   normal:
-    family: Hack
+    family: DejaVuSansMono Nerd Font
     style: Regular
   bold:
-    family: Hack
+    family: DejaVuSansMono Nerd Font
     style: Bold
   italic:
-    family: Hack
+    family: DejaVuSansMono Nerd Font
     style: Italic
 
 
