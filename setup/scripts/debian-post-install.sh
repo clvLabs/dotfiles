@@ -236,7 +236,7 @@ log_highlight - ----------------------------------------------------------------
 log_highlight -
 log_highlight - [$APP_NAME] Copying static base configuration files
 log_highlight -
-RUNCMD "cp -rfv $SETUP_RESOURCES_DIR/.config $HOME/.config"
+RUNCMD "cp -rfv $SETUP_RESOURCES_DIR/home $HOME"
 
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -
