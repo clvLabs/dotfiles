@@ -190,6 +190,13 @@ log_title -
 
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -
+log_highlight - [$APP_NAME] Setting screen resolution
+log_highlight -
+RUNCMD "sudo cp $SETUP_RESOURCES_DIR/custom-screen-resolution.sh /etc/profile.d"
+RUNCMD "source $SETUP_RESOURCES_DIR/custom-screen-resolution.sh"
+
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
 log_highlight - [$APP_NAME] Setting ZSH as default shell
 log_highlight -
 RUNCMD "chsh -s $(which zsh)"
