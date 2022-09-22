@@ -1,4 +1,4 @@
-# apt-install.txt
+# pip-install.txt
 # List of software to be installed using pip after OS install
 
 requests

@@ -12,6 +12,8 @@ tree
 exa
 jq
 xclip
+
+# Added for: code
 software-properties-common
 apt-transport-https
 wget
