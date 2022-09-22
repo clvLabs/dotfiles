@@ -16,6 +16,8 @@
 APP_NAME="debian-post-install"
 THIS_SCRIPT_DIR=$(dirname "$(realpath "$0")")
 
+SSH_KEY_EMAIL="onixag@gmail.com"
+
 # Include source code
 source $THIS_SCRIPT_DIR/src/utils.sh
 
@@ -153,7 +155,7 @@ log_highlight - ----------------------------------------------------------------
 log_highlight -
 log_highlight - [$APP_NAME] Creating SSH key
 log_highlight -
-RUNCMD "ssh-keygen -t rsa -C 'onixag@gmail.com'"
+RUNCMD "ssh-keygen -t rsa -C \'$SSH_KEY_EMAIL\'"
 
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -
