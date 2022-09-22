@@ -3,6 +3,9 @@
 
 # Based on: github.com/LostByteSoft/Debian-10
 
+# Junk system
+anacron
+
 # Junk accessories
 deja-dup
 gnome-firmware
