@@ -29,6 +29,7 @@ python3-dev
 # Fonts
 fonts-firacode
 fonts-font-awesome
+fonts-hack-ttf
 
 # Utils
 i3        # i3 tiling window manager
