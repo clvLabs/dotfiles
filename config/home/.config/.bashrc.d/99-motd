@@ -1,0 +1,29 @@
+# Welcome message
+COLOR='\e[96m'
+RESET_COLOR='\e[39m'
+
+# C=`grep '^c.*$' /usr/share/dict/spanish | shuf -n1 | tr 'a-z' 'A-Z'`
+# L=`grep '^l.*$' /usr/share/dict/spanish | shuf -n1 | tr 'a-z' 'A-Z'`
+# V=`grep '^v.*$' /usr/share/dict/spanish | shuf -n1 | tr 'a-z' 'A-Z'`
+
+ALLICONS="🤣\n🙂\n🤔\n🙄\n🤓\n🤠\n🤡\n🤢\n👿\n👺\n💀\n👻\n👽\n👾\n🤖\n💩"
+ICON=$(echo $ALLICONS | shuf -n1)
+
+# echo $COLOR\[ $C $L $V \]$RESET_COLOR $ICON
+
+# cnquote -> ChuckNorris Quote
+# crontab: 0 0 * * * /home/tony/bin/cnquote > /etc/motd
+MOTD=$(cat /etc/motd)
+echo $COLOR\[ $MOTD \]$RESET_COLOR $ICON
+
+
+# rae $C $L $V -S
+
+unset COLOR
+unset RESET_COLOR
+unset C
+unset L
+unset V
+unset ALLICONS
+unset ICON
+unset CNQUOTE

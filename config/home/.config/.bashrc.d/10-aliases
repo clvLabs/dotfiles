@@ -1,0 +1,69 @@
+# Aliases
+
+if command -v exa >/dev/null 2>&1
+then
+  # If exa is installed, use exa aliases
+  alias ls='exa \
+  --classify \
+  --icons \
+  --git \
+  --color-scale \
+  --group-directories-first \
+  --time-style=long-iso \
+  '
+
+  alias l='ls'
+  alias ld='ls --only-dirs'
+  alias la='ls --all'
+  alias ll='ls --long'
+  alias lx='ls --all --long'
+else
+  # Otherwise, use ls aliases
+  alias ls='ls \
+  --color=auto \
+  --dereference-command-line-symlink-to-dir \
+  '
+
+  alias l='ls -F'
+  alias la='ls -AF'
+  alias ll='ls -hlF'
+  alias lx='ls -hAlF'
+fi
+
+alias lf='lf-wrapper'
+
+
+# alias tree='LS_COLORS="" tree --dirsfirst -a -C -I ".git|.pio|node_modules|__pycache__"'
+alias tree='ls --tree --ignore-glob=".git|.pio|node_modules|__pycache__"'
+alias t='tree'
+alias td='t --only-dirs'
+alias ta='t --all'
+alias tl='t --long'
+alias tx='t --all --long'
+
+alias cat='batcat'
+
+alias fzf="fzf \
+--multi \
+--color=dark,hl:#ff2222 \
+"
+
+alias fzp="fzf \
+--preview 'batcat --color=always --style=numbers --line-range=:500 {}' \
+"
+
+alias grep='grep --color=auto'
+
+alias cd..='cd ..'
+alias ccat='pygmentize -O style=monokai -f console256 -g'
+alias setclip="xclip -selection c"
+alias getclip="xclip -selection c -o"
+
+alias sxiv='sxiv -tfpqrs f'
+
+alias mtr='mtr --displaymode 2 --curses'
+
+alias ssh='TERM=xterm-256color ssh'
+
+alias mosh='LC_ALL="en_US.UTF-8" mosh'
+

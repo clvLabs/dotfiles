@@ -1,0 +1,10 @@
+# apt-install.txt
+# List of software to be installed using snap after OS install
+
+
+# Install the core snap in order to get the latest snapd.
+core
+
+# Utils
+flameshot
+btop

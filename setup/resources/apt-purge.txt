@@ -1,0 +1,69 @@
+# apt-purge.txt
+# List of software to be removed using apt after OS install
+
+# Based on: github.com/LostByteSoft/Debian-10
+
+# Junk accessories
+deja-dup
+gnome-firmware
+goldendict
+gnote
+yelp
+khmerconverter
+debian-reference-common
+
+# Junk audio
+totem
+brasero
+brasero-common
+cheese
+sound-juicer
+gnome-sound-recorder
+
+# Junk games
+gnome-robots
+gnome-chess
+aisleriot
+five-or-more
+gnome-mahjongg
+tali
+four-in-a-row
+gnome-klotski
+gnome-mines
+gnome-nibbles
+gnome-2048
+gnome-sudoku
+gnome-taquin
+gnome-tetravex
+hitori
+lightsoff
+quadrapassel
+swell-foop
+iagno
+
+# Junk graphics
+eog
+simple-scan
+shotwell
+
+# Junk internet
+pidgin
+thunderbird
+hexchat
+transmission-gtk
+vinagre
+
+# Junk Office
+fbreader
+
+# Junk preferences
+anthy
+kasumi
+
+# Junk administration
+xterm
+mlterm-common
+mlterm
+mlterm-tiny
+xiterm+thai
+malcontent

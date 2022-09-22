@@ -1,0 +1,67 @@
+
+ZSH_CONFIG_BASE=/usr/share/zsh
+
+
+setopt inc_append_history autocd nomatch notify share_history extended_history
+bindkey -e
+
+# ---[ From: https://nuclearsquid.com/writings/edit-long-commands/
+# Enable Ctrl-x-e to edit command line
+autoload -U edit-command-line
+# Emacs style
+zle -N edit-command-line
+# bindkey '^xe' edit-command-line    #  (does not work 4me)
+bindkey '^x^e' edit-command-line
+# --------------------------------------------
+
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+
+
+# history
+HISTFILE=~/.zsh_history
+HISTSIZE=100000000
+SAVEHIST=100000000
+setopt HIST_IGNORE_SPACE
+setopt extended_history
+setopt hist_expire_dups_first
+setopt hist_ignore_dups # ignore duplication command history list
+setopt hist_ignore_space
+setopt hist_verify
+setopt inc_append_history
+setopt share_history # share command history data
+
+# completion
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
+zstyle ':completion:*' special-dirs true
+autoload -Uz compinit && compinit
+
+
+# Spaceship theme
+SPACESHIP_TIME_SHOW=false
+SPACESHIP_TIME_FORMAT="[%*]"
+
+SPACESHIP_DIR_TRUNC=0
+SPACESHIP_DIR_TRUNC_REPO=false
+SPACESHIP_DIR_PREFIX=" \b"
+
+SPACESHIP_GIT_BRANCH_PREFIX="\uE0A0 "
+SPACESHIP_GIT_BRANCH_SUFFIX=""
+
+SPACESHIP_GIT_STATUS_PREFIX=" "
+SPACESHIP_GIT_STATUS_SUFFIX=""
+SPACESHIP_GIT_STATUS_COLOR="red"
+
+SPACESHIP_GIT_PREFIX=" \b"
+
+SPACESHIP_PACKAGE_PREFIX=" \b"
+SPACESHIP_PACKAGE_COLOR="blue"
+
+SPACESHIP_NODE_PREFIX=" \b"
+
+SPACESHIP_VENV_PREFIX=" \b"
+
+source $ZSH_CONFIG_BASE/themes/spaceship-prompt/spaceship.zsh
+
+# syntax highlighting plugin
+source $ZSH_CONFIG_BASE/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -1,0 +1,5 @@
+# Local dev stuff
+local/
+
+# Setup logs
+setup/log/

@@ -1,0 +1,5 @@
+--pager="less -R"
+--paging=never
+--style=plain
+--color=auto
+--theme=OneHalfDark
