@@ -51,4 +51,5 @@ log_success - ------------------------------------------------------------------
 
 if [ -z $DEBUG ]; then
   RUNCMD "cp --verbose $LOG_TEMPFILE $LOG_FILE"
+  RUNCMD "rm $LOG_TEMPFILE"
 fi
