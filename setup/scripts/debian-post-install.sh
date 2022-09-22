@@ -41,18 +41,30 @@ log_title -
 log_title - [$APP_NAME] Updating OS
 log_title -
 
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
 log_highlight - [$APP_NAME] Updating package indexes
+log_highlight -
 RUNCMD "DEBIAN_FRONTEND=noninteractive sudo apt -y update"
 
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
 log_highlight - [$APP_NAME] Removing unneeded software
+log_highlight -
 APT_PURGE=$(echo $(sed "s/#.*$//g" $SETUP_RESOURCES_DIR/apt-purge.txt | cat))
 RUNCMD "DEBIAN_FRONTEND=noninteractive sudo apt -y purge $APT_PURGE"
 
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
 log_highlight - [$APP_NAME] Cleaning packages
+log_highlight -
 RUNCMD "DEBIAN_FRONTEND=noninteractive sudo apt -y autoremove"
 RUNCMD "DEBIAN_FRONTEND=noninteractive sudo apt -y autoclean"
 
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
 log_highlight - [$APP_NAME] Upgrading packages
+log_highlight -
 RUNCMD "DEBIAN_FRONTEND=noninteractive sudo apt -y upgrade"
 
 
@@ -62,34 +74,52 @@ log_title - [$APP_NAME] Installing software
 log_title -
 
 # --------------------------------------------------------------------------------------------------
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
 log_highlight - [$APP_NAME] Installing package list for: apt
+log_highlight -
 APT_INSTALL=$(echo $(sed "s/#.*$//g" $SETUP_RESOURCES_DIR/apt-install.txt | cat))
 RUNCMD "DEBIAN_FRONTEND=noninteractive sudo apt -y install $APT_INSTALL"
 
 # --------------------------------------------------------------------------------------------------
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
 log_highlight - [$APP_NAME] Installing package list for: snap
+log_highlight -
 SNAP_INSTALL=$(echo $(sed "s/#.*$//g" $SETUP_RESOURCES_DIR/snap-install.txt | cat))
 RUNCMD "sudo snap install $SNAP_INSTALL"
 
 # --------------------------------------------------------------------------------------------------
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
 log_highlight - [$APP_NAME] Installing package list for: snap --classic
+log_highlight -
 SNAP_INSTALL=$(echo $(sed "s/#.*$//g" $SETUP_RESOURCES_DIR/snap-classic-install.txt | cat))
 RUNCMD "sudo snap install $SNAP_INSTALL --classic"
 
 # --------------------------------------------------------------------------------------------------
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
 log_highlight - [$APP_NAME] Installing package list for: pip
+log_highlight -
 PIP_INSTALL=$(echo $(sed "s/#.*$//g" $SETUP_RESOURCES_DIR/pip-install.txt | cat))
 RUNCMD "pip3 install $PIP_INSTALL"
 
 # --------------------------------------------------------------------------------------------------
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
 log_highlight - [$APP_NAME] Installing specific package: vscode
+log_highlight -
 RUNCMD "wget -O- https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor | sudo tee /usr/share/keyrings/vscode.gpg"
 RUNCMD "echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.microsoft.com/repos/vscode stable main | sudo tee /etc/apt/sources.list.d/vscode.list"
 RUNCMD "sudo apt update"
 RUNCMD "sudo apt -y install code"
 
 # --------------------------------------------------------------------------------------------------
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
 log_highlight - [$APP_NAME] Installing specific package: brave-browser
+log_highlight -
 RUNCMD "sudo apt install apt-transport-https curl"
 RUNCMD "sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg"
 RUNCMD "echo 'deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main'|sudo tee /etc/apt/sources.list.d/brave-browser-release.list"
@@ -97,14 +127,20 @@ RUNCMD "sudo apt update"
 RUNCMD "sudo apt -y install brave-browser"
 
 # --------------------------------------------------------------------------------------------------
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
 log_highlight - [$APP_NAME] Installing specific package: spaceship-prompt
+log_highlight -
 ZSH_CONFIG_BASE=/usr/share/zsh
 RUNCMD "sudo mkdir -p $ZSH_CONFIG_BASE/themes"
 RUNCMD "sudo chown $USER:$USER $ZSH_CONFIG_BASE/themes"
 RUNCMD "git clone https://github.com/denysdovhan/spaceship-prompt.git $ZSH_CONFIG_BASE/themes/spaceship-prompt"
 
 # --------------------------------------------------------------------------------------------------
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
 log_highlight - [$APP_NAME] Installing specific package: zsh-syntax-highlighting
+log_highlight -
 ZSH_CONFIG_BASE=/usr/share/zsh
 RUNCMD "sudo mkdir -p $ZSH_CONFIG_BASE/plugins"
 RUNCMD "sudo chown $USER:$USER $ZSH_CONFIG_BASE/plugins"
