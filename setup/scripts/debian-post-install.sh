@@ -53,7 +53,7 @@ log_highlight - ----------------------------------------------------------------
 log_highlight -
 log_highlight - [$APP_NAME] Removing unneeded software
 log_highlight -
-APT_PURGE=$(echo $(sed "s/#.*$//g" $SETUP_RESOURCES_DIR/apt-purge.txt | cat))
+APT_PURGE=$(echo $(sed "s/#.*$//g" $SETUP_RESOURCES_DIR/requirements/apt-purge.txt | cat))
 RUNCMD "DEBIAN_FRONTEND=noninteractive sudo apt -y purge $APT_PURGE"
 
 log_highlight - ----------------------------------------------------------------------------
@@ -78,28 +78,28 @@ log_highlight - ----------------------------------------------------------------
 log_highlight -
 log_highlight - [$APP_NAME] Installing package list for: apt
 log_highlight -
-APT_INSTALL=$(echo $(sed "s/#.*$//g" $SETUP_RESOURCES_DIR/apt-install.txt | cat))
+APT_INSTALL=$(echo $(sed "s/#.*$//g" $SETUP_RESOURCES_DIR/requirements/apt-install.txt | cat))
 RUNCMD "DEBIAN_FRONTEND=noninteractive sudo apt -y install $APT_INSTALL"
 
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -
 log_highlight - [$APP_NAME] Installing package list for: snap
 log_highlight -
-SNAP_INSTALL=$(echo $(sed "s/#.*$//g" $SETUP_RESOURCES_DIR/snap-install.txt | cat))
+SNAP_INSTALL=$(echo $(sed "s/#.*$//g" $SETUP_RESOURCES_DIR/requirements/snap-install.txt | cat))
 RUNCMD "sudo snap install $SNAP_INSTALL"
 
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -
 log_highlight - [$APP_NAME] Installing package list for: snap --classic
 log_highlight -
-SNAP_INSTALL=$(echo $(sed "s/#.*$//g" $SETUP_RESOURCES_DIR/snap-classic-install.txt | cat))
+SNAP_INSTALL=$(echo $(sed "s/#.*$//g" $SETUP_RESOURCES_DIR/requirements/snap-classic-install.txt | cat))
 RUNCMD "sudo snap install $SNAP_INSTALL --classic"
 
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -
 log_highlight - [$APP_NAME] Installing package list for: pip
 log_highlight -
-PIP_INSTALL=$(echo $(sed "s/#.*$//g" $SETUP_RESOURCES_DIR/pip-install.txt | cat))
+PIP_INSTALL=$(echo $(sed "s/#.*$//g" $SETUP_RESOURCES_DIR/requirements/pip-install.txt | cat))
 RUNCMD "pip3 install $PIP_INSTALL"
 
 log_highlight - ----------------------------------------------------------------------------
@@ -190,13 +190,6 @@ log_title -
 
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -
-log_highlight - [$APP_NAME] Setting screen resolution
-log_highlight -
-RUNCMD "sudo cp $SETUP_RESOURCES_DIR/custom-screen-resolution.sh /etc/profile.d"
-RUNCMD "source $SETUP_RESOURCES_DIR/custom-screen-resolution.sh"
-
-log_highlight - ----------------------------------------------------------------------------
-log_highlight -
 log_highlight - [$APP_NAME] Setting ZSH as default shell
 log_highlight -
 RUNCMD "chsh -s $(which zsh)"
@@ -223,7 +216,7 @@ RUNCMD "sudo chown $USER:$USER /etc/motd"
 CRON_TEMPFILE=$(mktemp)
 RUNCMD "crontab -l > $CRON_TEMPFILE"
 RUNCMD "touch $CRON_TEMPFILE"
-RUNCMD "cat $SETUP_RESOURCES_DIR/crontab >> $CRON_TEMPFILE"
+RUNCMD "cat $SETUP_RESOURCES_DIR/partial/crontab >> $CRON_TEMPFILE"
 RUNCMD "crontab $CRON_TEMPFILE"
 RUNCMD "rm $CRON_TEMPFILE"
 
@@ -236,7 +229,14 @@ log_highlight - ----------------------------------------------------------------
 log_highlight -
 log_highlight - [$APP_NAME] Copying static base configuration files
 log_highlight -
-RUNCMD "cp -rfv $SETUP_RESOURCES_DIR/home $HOME"
+RUNCMD "sudo cp -rfv $SETUP_RESOURCES_DIR/static/etc /etc"
+RUNCMD "cp -rfv $SETUP_RESOURCES_DIR/static/home $HOME"
+
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
+log_highlight - [$APP_NAME] Updating screen resolution
+log_highlight -
+RUNCMD "source /etc/profile.d/custom-screen-resolution.sh"
 
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -
