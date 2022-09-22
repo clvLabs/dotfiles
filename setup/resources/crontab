@@ -1,3 +1,10 @@
 
-# Add a Chuck Norris quote in motd
+# ######################################################################
+#
+# Section added by: clvLabs/dotfiles
+#
+
+# Save a new Chuck Norris quote in motd every day
 0 0 * * * /home/tony/bin/cnquote > /etc/motd
+
+# ######################################################################
