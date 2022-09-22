@@ -136,6 +136,20 @@ RUNCMD "sudo apt -y install brave-browser"
 
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -
+log_highlight - [$APP_NAME] Installing specific package: lf
+log_highlight -
+
+OLDPWD=$PWD
+TEMP_FOLDER=$(mktemp -d)
+cd $TEMP_FOLDER
+RUNCMD "wget https://github.com/gokcehan/lf/releases/download/r27/lf-linux-amd64.tar.gz"
+RUNCMD "tar xvzf lf-linux-amd64.tar.gz"
+RUNCMD "sudo mv lf /usr/bin"
+cd $OLDPWD
+RUNCMD "sudo rm -rf $TEMP_FOLDER"
+
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
 log_highlight - [$APP_NAME] Installing specific package: spaceship-prompt
 log_highlight -
 ZSH_CONFIG_BASE=/usr/share/zsh
