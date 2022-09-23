@@ -57,6 +57,7 @@ transmission-gtk
 vinagre
 
 # Junk Office
+abiword
 fbreader
 
 # Junk preferences

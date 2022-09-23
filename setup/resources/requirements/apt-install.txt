@@ -39,9 +39,10 @@ fonts-firacode
 fonts-font-awesome
 
 # Utils
-i3        # i3 tiling window manager
-zsh       # ZSH shell
-mpv       # Movie player
-remmina   # Remote desktop manager
-vpnc      # VPN manager
-snapd     # Snap package manager
+i3                     # i3 tiling window manager
+zsh                    # ZSH shell
+mpv                    # Movie player
+remmina                # Remote desktop manager
+vpnc                   # VPN manager
+snapd                  # Snap package manager
+libreoffice            # Office suite
