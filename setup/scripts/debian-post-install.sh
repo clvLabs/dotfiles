@@ -141,13 +141,10 @@ log_highlight -
 log_highlight - [$APP_NAME] Installing specific package: lf
 log_highlight -
 
-OLDPWD=$PWD
 TEMP_FOLDER=$(mktemp -d)
-cd $TEMP_FOLDER
-RUNCMD "wget https://github.com/gokcehan/lf/releases/download/r27/lf-linux-amd64.tar.gz"
-RUNCMD "tar xvzf lf-linux-amd64.tar.gz"
-RUNCMD "sudo mv lf /usr/bin"
-cd $OLDPWD
+RUNCMD "wget -O $TEMP_FOLDER/lf.tar.gz https://github.com/gokcehan/lf/releases/download/r27/lf-linux-amd64.tar.gz"
+RUNCMD "tar xvzf $TEMP_FOLDER/lf.tar.gz -C $TEMP_FOLDER"
+RUNCMD "sudo mv $TEMP_FOLDER/lf /usr/bin"
 RUNCMD "sudo rm -rf $TEMP_FOLDER"
 
 log_highlight - ----------------------------------------------------------------------------
@@ -173,15 +170,11 @@ log_highlight -
 log_highlight - [$APP_NAME] Installing specific package: dejavu-sans-mono-nerd-font
 log_highlight -
 
-OLDPWD=$PWD
 TEMP_FOLDER=$(mktemp -d)
 FONT_DEST_FOLDER=/usr/share/fonts/truetype/nerd-fonts/dejavu-sans-mono
-cd $TEMP_FOLDER
-RUNCMD "wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/DejaVuSansMono.zip"
+RUNCMD "wget -O $TEMP_FOLDER/DejaVuSansMono.zip https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/DejaVuSansMono.zip"
 RUNCMD "sudo mkdir -p $FONT_DEST_FOLDER"
-cd $FONT_DEST_FOLDER
-RUNCMD "sudo unzip $TEMP_FOLDER/DejaVuSansMono.zip"
-cd $OLDPWD
+RUNCMD "sudo unzip $TEMP_FOLDER/DejaVuSansMono.zip -d $FONT_DEST_FOLDER"
 RUNCMD "sudo rm -rf $TEMP_FOLDER"
 RUNCMD "fc-cache --force --verbose"
 
