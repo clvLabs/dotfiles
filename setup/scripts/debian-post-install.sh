@@ -181,7 +181,7 @@ cd $FONT_DEST_FOLDER
 RUNCMD "sudo unzip $TEMP_FOLDER/DejaVuSansMono.zip"
 cd $OLDPWD
 RUNCMD "sudo rm -rf $TEMP_FOLDER"
-RUNCME "fc-cache --force --verbose"
+RUNCMD "fc-cache --force --verbose"
 
 log_title - ----------------------------------------------------------------------------
 log_title -
