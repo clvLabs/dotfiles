@@ -258,6 +258,8 @@ log_success - ------------------------------------------------------------------
 log_success -
 log_success - [$APP_NAME] Setup finished successfully
 log_success -
+log_warning - Please reboot
+log_success -
 log_success - ----------------------------------------------------------------------------
 
 if [ -z $DEBUG ]; then
