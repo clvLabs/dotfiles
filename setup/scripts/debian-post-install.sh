@@ -38,6 +38,20 @@ fi
 # SETUP START
 #
 
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
+log_highlight - [$APP_NAME] Copying static base configuration files
+log_highlight -
+RUNCMD "sudo cp -rfv $SETUP_RESOURCES_DIR/static/etc /etc"
+RUNCMD "sudo cp -rfv $SETUP_RESOURCES_DIR/static/var /var"
+RUNCMD "cp -rfv $SETUP_RESOURCES_DIR/static/home $HOME"
+
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
+log_highlight - [$APP_NAME] Updating screen resolution
+log_highlight -
+RUNCMD "source /etc/profile.d/custom-screen-resolution.sh"
+
 log_title - ----------------------------------------------------------------------------
 log_title -
 log_title - [$APP_NAME] Updating OS
@@ -185,6 +199,15 @@ log_title -
 
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -
+log_highlight - [$APP_NAME] Setting i3 as default window manager
+log_highlight -
+
+RUNCMD "sudo cp /var/lib/AccountsService/users/_user_template /var/lib/AccountsService/users/$USER"
+RUNCMD "sudo sed -i \"s/__USER__/$USER/g\" /var/lib/AccountsService/users/$USER"
+RUNCMD "sudo rm /var/lib/AccountsService/users/_user_template "
+
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
 log_highlight - [$APP_NAME] Setting ZSH as default shell
 log_highlight -
 RUNCMD "chsh -s $(which zsh)"
@@ -219,19 +242,6 @@ log_title - --------------------------------------------------------------------
 log_title -
 log_title - [$APP_NAME] Installing dotfiles/utility scripts
 log_title -
-
-log_highlight - ----------------------------------------------------------------------------
-log_highlight -
-log_highlight - [$APP_NAME] Copying static base configuration files
-log_highlight -
-RUNCMD "sudo cp -rfv $SETUP_RESOURCES_DIR/static/etc /etc"
-RUNCMD "cp -rfv $SETUP_RESOURCES_DIR/static/home $HOME"
-
-log_highlight - ----------------------------------------------------------------------------
-log_highlight -
-log_highlight - [$APP_NAME] Updating screen resolution
-log_highlight -
-RUNCMD "source /etc/profile.d/custom-screen-resolution.sh"
 
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -
