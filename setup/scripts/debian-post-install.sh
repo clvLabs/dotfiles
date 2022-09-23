@@ -38,20 +38,6 @@ fi
 # SETUP START
 #
 
-log_highlight - ----------------------------------------------------------------------------
-log_highlight -
-log_highlight - [$APP_NAME] Copying static base configuration files
-log_highlight -
-RUNCMD "sudo cp -rfv $SETUP_RESOURCES_DIR/static/etc/. /etc/"
-RUNCMD "sudo cp -rfv $SETUP_RESOURCES_DIR/static/var/. /var/"
-RUNCMD "cp -rfv $SETUP_RESOURCES_DIR/static/home/. $HOME/"
-
-log_highlight - ----------------------------------------------------------------------------
-log_highlight -
-log_highlight - [$APP_NAME] Updating screen resolution
-log_highlight -
-RUNCMD "source /etc/profile.d/custom-screen-resolution.sh"
-
 log_title - ----------------------------------------------------------------------------
 log_title -
 log_title - [$APP_NAME] Updating OS
@@ -196,6 +182,14 @@ log_title - --------------------------------------------------------------------
 log_title -
 log_title - [$APP_NAME] Configuring system
 log_title -
+
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
+log_highlight - [$APP_NAME] Copying static base configuration files
+log_highlight -
+RUNCMD "sudo cp -rfv $SETUP_RESOURCES_DIR/static/etc/. /etc/"
+RUNCMD "sudo cp -rfv $SETUP_RESOURCES_DIR/static/var/. /var/"
+RUNCMD "cp -rfv $SETUP_RESOURCES_DIR/static/home/. $HOME/"
 
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -
