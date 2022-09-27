@@ -13,7 +13,7 @@ set $mod Mod4
 set $alt Mod1
 
 # Window borders
-default_border pixel 1
+default_border pixel 2
 default_floating_border pixel 2
 hide_edge_borders smart
 
