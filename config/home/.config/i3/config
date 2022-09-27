@@ -22,7 +22,7 @@ hide_edge_borders smart
 #  Default colors
 #
 # class                 border  backgr. text    indicator child_border
-client.focused          #3D607A #285577 #ffffff #DBA02A   #7C723B
+client.focused          #3D607A #285577 #ffffff #2E9EF4   #49FF79
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
@@ -114,8 +114,8 @@ bindsym XF86AudioPrev exec playerctl --player=spotify previous
 bindsym $mod+F2 exec playerctl --player=spotify previous
 
 # start dmenu (a program launcher)
-#bindsym $mod+d exec dmenu_run
-bindsym $mod+d exec "dmenu_run -nf '#FFFFFF' -nb '#696032' -sb '#7C723B' -sf '#FFFFFF' -fn 'monospace-14' -p ''"
+bindsym $mod+d exec "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#005577' -sf '#EEEEEE' -fn 'monospace-15' -p ''"
+
 
 # monitors
 set $mon-left DVI-I-1
