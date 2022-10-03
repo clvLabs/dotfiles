@@ -1,5 +1,5 @@
 # apt-purge.txt
-# List of software to be removed using apt after OS install
+# List of software to be removed using apt-get after OS install
 
 # Based on: github.com/LostByteSoft/Debian-10
 
@@ -10,6 +10,9 @@ anacron
 debian-reference-common
 deja-dup
 gnome-firmware
+gnome-screenshot
+gnome-text-editor
+gnome-todo
 gnote
 goldendict
 khmerconverter
@@ -19,6 +22,7 @@ yelp
 brasero
 brasero-common
 cheese
+gnome-music
 gnome-sound-recorder
 sound-juicer
 totem
@@ -69,7 +73,6 @@ malcontent
 mlterm
 mlterm-common
 mlterm-tiny
-xiterm+thai
 xterm
 
 # Remove before installing docker
