@@ -2,26 +2,9 @@
 # List of software to be installed using apt after OS install
 
 
-# System tools
-vim
-net-tools
-nmap
-curl
-mosh
-entr
-tree
-exa
-fzf
-bat
-jq
-xclip
-
-# Added for: code
+# Base software
 software-properties-common
 apt-transport-https
-wget
-
-# Added for: docker
 ca-certificates
 gnupg
 lsb-release
@@ -33,6 +16,21 @@ git
 python3
 python3-pip
 python3-dev
+
+# System tools
+vim
+net-tools
+wget
+nmap
+curl
+mosh
+entr
+tree
+exa
+fzf
+bat
+jq
+xclip
 
 # Fonts
 fonts-firacode
