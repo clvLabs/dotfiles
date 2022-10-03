@@ -44,3 +44,4 @@ remmina                # Remote desktop manager
 vpnc                   # VPN manager
 snapd                  # Snap package manager
 libreoffice            # Office suite
+flameshot              # Screen capture utility

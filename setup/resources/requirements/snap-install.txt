@@ -4,6 +4,3 @@
 
 # Install the core snap in order to get the latest snapd.
 core
-
-# Utils
-flameshot
