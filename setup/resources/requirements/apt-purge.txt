@@ -7,52 +7,52 @@
 anacron
 
 # Junk accessories
+debian-reference-common
 deja-dup
 gnome-firmware
-goldendict
 gnote
-yelp
+goldendict
 khmerconverter
-debian-reference-common
+yelp
 
 # Junk audio
-totem
 brasero
 brasero-common
 cheese
-sound-juicer
 gnome-sound-recorder
+sound-juicer
+totem
 
 # Junk games
-gnome-robots
-gnome-chess
 aisleriot
 five-or-more
-gnome-mahjongg
-tali
 four-in-a-row
+gnome-2048
+gnome-chess
 gnome-klotski
+gnome-mahjongg
 gnome-mines
 gnome-nibbles
-gnome-2048
+gnome-robots
 gnome-sudoku
 gnome-taquin
 gnome-tetravex
 hitori
+iagno
 lightsoff
 quadrapassel
 swell-foop
-iagno
+tali
 
 # Junk graphics
 eog
-simple-scan
 shotwell
+simple-scan
 
 # Junk internet
+hexchat
 pidgin
 thunderbird
-hexchat
 transmission-gtk
 vinagre
 
@@ -65,16 +65,16 @@ anthy
 kasumi
 
 # Junk administration
-xterm
-mlterm-common
+malcontent
 mlterm
+mlterm-common
 mlterm-tiny
 xiterm+thai
-malcontent
+xterm
 
 # Remove before installing docker
+containerd
 docker
 docker-engine
 docker.io
-containerd
 runc
