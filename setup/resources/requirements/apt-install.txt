@@ -40,6 +40,7 @@ fonts-font-awesome
 flameshot              # Screen capture utility
 gimp                   # Image manipulation software
 i3                     # i3 tiling window manager
+i3lock                 # i3 screen locker
 inkscape               # Vector graphics software
 libreoffice            # Office suite
 mpv                    # Movie player
