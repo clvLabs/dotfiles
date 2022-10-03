@@ -15,5 +15,5 @@ Prefixes are used to group scripts:
 * `5xx-`: Development software
 * `6xx-`: (reserved)
 * `7xx-`: Productivity software
-* `8xx-`: (reserved)
+* `8xx-`: Misc. software
 * `9xx-`: (reserved)
