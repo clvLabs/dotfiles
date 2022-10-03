@@ -23,6 +23,8 @@ source $THIS_SCRIPT_DIR/src/utils.sh
 
 LOG_FILE="${SETUP_LOGS_DIR}/${APP_NAME}.log"
 
+POST_INSTALL_SRC_DIR=$THIS_SCRIPT_DIR/src/debian-post-install
+
 # ############################################################################
 #
 # Avoid setup re-run
@@ -43,22 +45,22 @@ log_title -
 log_title - [$APP_NAME] Updating OS
 log_title -
 
-source $THIS_SCRIPT_DIR/src/debian-post-install/update-os.sh
+source $POST_INSTALL_SRC_DIR/update-os.sh
 
 log_title - ----------------------------------------------------------------------------
 log_title -
 log_title - [$APP_NAME] Installing software
 log_title -
 
-source $THIS_SCRIPT_DIR/src/debian-post-install/install-software-lists.sh
-source $THIS_SCRIPT_DIR/src/debian-post-install/install-specific-software.sh
+source $POST_INSTALL_SRC_DIR/install-software-lists.sh
+source $POST_INSTALL_SRC_DIR/install-specific-software.sh
 
 log_title - ----------------------------------------------------------------------------
 log_title -
 log_title - [$APP_NAME] Configuring system
 log_title -
 
-source $THIS_SCRIPT_DIR/src/debian-post-install/configure-system.sh
+source $POST_INSTALL_SRC_DIR/configure-system.sh
 
 log_title - ----------------------------------------------------------------------------
 log_title -
