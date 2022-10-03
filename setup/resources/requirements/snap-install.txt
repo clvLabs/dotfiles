@@ -7,4 +7,3 @@ core
 
 # Utils
 flameshot
-btop
