@@ -1,6 +1,6 @@
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -
-log_highlight - [$APP_NAME] Updating package indexes
+log_highlight - [$APP_NAME] Updating apt package indexes
 log_highlight -
 RUNCMD "DEBIAN_FRONTEND=noninteractive sudo apt-get -y update"
 
@@ -13,13 +13,13 @@ RUNCMD "DEBIAN_FRONTEND=noninteractive sudo apt-get -y purge $APT_PURGE"
 
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -
-log_highlight - [$APP_NAME] Cleaning packages
+log_highlight - [$APP_NAME] Cleaning apt packages
 log_highlight -
 RUNCMD "DEBIAN_FRONTEND=noninteractive sudo apt-get -y autoremove"
 RUNCMD "DEBIAN_FRONTEND=noninteractive sudo apt-get -y autoclean"
 
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -
-log_highlight - [$APP_NAME] Upgrading packages
+log_highlight - [$APP_NAME] Upgrading apt packages
 log_highlight -
 RUNCMD "DEBIAN_FRONTEND=noninteractive sudo apt-get -y upgrade"

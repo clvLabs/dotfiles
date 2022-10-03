@@ -79,6 +79,13 @@ log_highlight - [$APP_NAME] Running utility script installer
 log_highlight -
 RUNCMD "$SETUP_SCRIPTS_DIR/scripts-install.sh"
 
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
+log_highlight - [$APP_NAME] Cleaning apt packages after setup
+log_highlight -
+RUNCMD "DEBIAN_FRONTEND=noninteractive sudo apt-get -y autoremove"
+RUNCMD "DEBIAN_FRONTEND=noninteractive sudo apt-get -y autoclean"
+
 # ############################################################################
 #
 # End of unattended section
