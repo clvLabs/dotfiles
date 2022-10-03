@@ -32,7 +32,7 @@ set showcmd
 set mouse=a
 
 " Line numbers
-set nu
+set number relativenumber
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
