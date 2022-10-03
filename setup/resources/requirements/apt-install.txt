@@ -1,5 +1,5 @@
 # apt-install.txt
-# List of software to be installed using apt after OS install
+# List of software to be installed using apt-get after OS install
 
 
 # Base software

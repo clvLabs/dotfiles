@@ -3,7 +3,7 @@ log_highlight -
 log_highlight - [$APP_NAME] Installing package list for: apt
 log_highlight -
 APT_INSTALL=$(echo $(sed "s/#.*$//g" $SETUP_RESOURCES_DIR/requirements/apt-install.txt | cat))
-RUNCMD "DEBIAN_FRONTEND=noninteractive sudo apt -y install $APT_INSTALL"
+RUNCMD "DEBIAN_FRONTEND=noninteractive sudo apt-get -y install $APT_INSTALL"
 
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -
