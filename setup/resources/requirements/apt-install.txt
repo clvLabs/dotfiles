@@ -47,4 +47,5 @@ mpv                    # Movie player
 openscad               # Script based 3D CAD software
 remmina                # Remote desktop manager
 vpnc                   # VPN manager
+wspanish               # Spanish dictionary (/usr/share/dict/spanish)
 zsh                    # ZSH shell
