@@ -3,6 +3,7 @@ log_highlight -
 log_highlight - [$APP_NAME] Copying static base configuration files
 log_highlight -
 RUNCMD "sudo cp -rfv $SETUP_RESOURCES_DIR/static/etc/. /etc/"
+RUNCMD "sudo cp -rfv $SETUP_RESOURCES_DIR/static/usr/. /usr/"
 RUNCMD "sudo cp -rfv $SETUP_RESOURCES_DIR/static/var/. /var/"
 RUNCMD "cp -rfv $SETUP_RESOURCES_DIR/static/home/. $HOME/"
 
