@@ -135,16 +135,16 @@ map cap _copy_all_files_path
 map cAp _copy_ALL_files_path
 
 # [o]pen commands
-map oa $mimeopen --ask "$f" # Open with (ask)
+map oa &mimeopen --ask "$f" # Open with (ask)
 map ob &brave-browser "$f" # Open with Brave
 map oc &code "$f" # Open with VSCode
 map od &xdg-open $f # Open with default program
-map oe $$EDITOR "$f" # Open with default editor
-map oi $sxiv "$PWD" # Open with sxiv
-map ol $echo "$fx" | tr "\n" " " | xargs batcat --style=full --paging=always # Open with pager
-map om $mpv "$f"  # Open with mpv
-map on $nano "$f" # Open with nano
-map ov $vim "$f" # Open with vim
+map oe &$EDITOR "$f" # Open with default editor
+map oi &sxiv "$PWD" # Open with sxiv
+map ol &echo "$fx" | tr "\n" " " | xargs batcat --style=full --paging=always # Open with pager
+map om &mpv "$f"  # Open with mpv
+map on &nano "$f" # Open with nano
+map ov &vim "$f" # Open with vim
 
 # Calc all dir sizes
 cmd _calc_all_dir_sizes : {{
