@@ -87,7 +87,8 @@ bindsym $mod+minus scratchpad show
 
 # screen capture
 bindsym Print exec --no-startup-id flameshot gui
-bindsym Shift+Print exec --no-startup-id gnome-screenshot -i
+bindsym Shift+Print exec --no-startup-id flameshot full -r > $HOME/tmp/flameshot-$(date +%s).png
+bindsym $mod+Print exec --no-startup-id gnome-screenshot -i
 
 # Volume controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume $(pactl info|grep -oP "(?<=Default Sink: ).*") +10% #increase sound volume
