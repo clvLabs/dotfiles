@@ -20,6 +20,7 @@ python3-pip
 # System tools
 bat
 curl
+httpie
 entr
 exa
 fzf
