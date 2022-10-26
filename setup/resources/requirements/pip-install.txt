@@ -1,4 +1,7 @@
 # pip-install.txt
 # List of software to be installed using pip after OS install
 
-requests
+requests               # Python HTTP for Humans
+py3status              # Take control of your i3bar
+pydbus                 # Required by py3status
+pygi                   # Required by py3status
