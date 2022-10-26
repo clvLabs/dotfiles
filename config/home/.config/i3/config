@@ -104,10 +104,8 @@ bindsym $mod+F10 exec --no-startup-id pactl set-sink-mute $(pactl info|grep -oP 
 bindsym $mod+F11 exec --no-startup-id pactl -- set-sink-volume $(pactl info|grep -oP "(?<=Default Sink: ).*") -10% #increase sound volume
 bindsym $mod+F12 exec --no-startup-id pactl -- set-sink-volume $(pactl info|grep -oP "(?<=Default Sink: ).*") +10% #increase sound volume
 
-# bindsym --whole-window --border $mod+button4 focus left
-# bindsym --whole-window --border $mod+button5 focus right
-bindsym --whole-window --border $mod+button4 exec --no-startup-id pactl -- set-sink-volume $(pactl info|grep -oP "(?<=Default Sink: ).*") +10% #increase sound volume
-bindsym --whole-window --border $mod+button5 exec --no-startup-id pactl -- set-sink-volume $(pactl info|grep -oP "(?<=Default Sink: ).*") -10% #decrease sound volume
+bindsym --whole-window --border $mod+Ctrl+$alt+button4 exec --no-startup-id pactl -- set-sink-volume $(pactl info|grep -oP "(?<=Default Sink: ).*") +10% #increase sound volume
+bindsym --whole-window --border $mod+Ctrl+$alt+button5 exec --no-startup-id pactl -- set-sink-volume $(pactl info|grep -oP "(?<=Default Sink: ).*") -10% #decrease sound volume
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl --player=spotify play-pause
@@ -212,6 +210,18 @@ bindsym $mod+$alt+Right move workspace to output right
 bindsym $mod+Ctrl+$alt+1 move workspace to output $mon-left
 bindsym $mod+Ctrl+$alt+2 move workspace to output $mon-main
 bindsym $mod+Ctrl+$alt+3 move workspace to output $mon-right
+
+# prev/next workspace (on same output)
+bindsym --whole-window --border $mod+button4 workspace prev_on_output
+bindsym --whole-window --border $mod+button5 workspace next_on_output
+
+# focus left/right
+bindsym --whole-window --border $mod+Ctrl+button4 focus left
+bindsym --whole-window --border $mod+Ctrl+button5 focus right
+
+# move current container to prev/next workspace (on same output)
+bindsym --whole-window --border $mod+$alt+button4 move workspace to output left
+bindsym --whole-window --border $mod+$alt+button5 move workspace to output right
 
 # split in horizontal orientation
 # bindsym $mod+h split h
