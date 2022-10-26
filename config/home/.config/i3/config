@@ -57,6 +57,9 @@ font pango:DejaVu Sans Mono Nerd Font Complete 10
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# Toggle containers' "sticky" flag (only floating!)
+bindsym $mod+Ctrl+KP_Add sticky toggle
+
 # start a terminal
 bindsym $mod+Return exec alacritty
 bindsym $mod+KP_Enter exec alacritty
