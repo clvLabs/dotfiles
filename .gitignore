@@ -3,3 +3,6 @@ local/
 
 # Setup logs
 setup/log/
+
+# Temp python files
+*.pyc
