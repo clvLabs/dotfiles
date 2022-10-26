@@ -255,15 +255,15 @@ bindsym $mod+a focus parent
 exec_always xsetroot -solid "#07070C"
 exec --no-startup-id numlockx on
 
-#exec i3-msg 'workspace $ws2; exec alacritty; workspace $ws1; exec brave-browser;'
 exec i3-msg 'workspace $ws1; exec brave-browser;'
 exec i3-msg 'workspace $ws10; exec alacritty --command clock; exec alacritty --command mtr 8.8.8.8;'
 
 # Manual startup associated to workspaces
-bindsym $mod+$alt+x workspace $ws9; exec alacritty --command bash -c btop
+# bindsym $mod+$alt+w     # "WORK"
+bindsym $mod+$alt+z workspace $ws15; exec code ~/.config/dotfiles/
+bindsym $mod+$alt+x workspace $ws10; exec alacritty --command clock; exec alacritty --command mtr 8.8.8.8
 bindsym $mod+$alt+c workspace $ws19; exec brave-browser --new-window https://gmail.com; exec brave-browser --new-window https://web.whatsapp.com
 bindsym $mod+$alt+m workspace $ws20; exec spotify
-bindsym $mod+$alt+z workspace $ws15; exec code ~/.config/dotfiles/
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
