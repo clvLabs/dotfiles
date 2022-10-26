@@ -129,6 +129,17 @@ apt_updates {
 }
 
 # ---------------------------------------------------------------
+order += "weather_owm"
+weather_owm {
+  api_key = "my-openweathermap-org-api-key"
+  format = "{icon} {temperature} {humidity}[ {rain}]"
+  format_temperature = "[\?color=all {current:.0f}°{unit}]"
+  format_humidity = "{humidity}%"
+  unit_temperature = "c"
+  unit_rain = "mm"
+}
+
+# ---------------------------------------------------------------
 order += "tztime local"
 tztime local {
         format = "%Y%m%d %H%M"
