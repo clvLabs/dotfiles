@@ -257,8 +257,7 @@ exec --no-startup-id numlockx on
 
 #exec i3-msg 'workspace $ws2; exec alacritty; workspace $ws1; exec brave-browser;'
 exec i3-msg 'workspace $ws1; exec brave-browser;'
-
-bindsym $mod+$alt+Ctrl+Shift+q exec i3-msg 'exit'
+exec i3-msg 'workspace $ws10; exec alacritty --command clock; exec alacritty --command mtr 8.8.8.8;'
 
 # Manual startup associated to workspaces
 bindsym $mod+$alt+x workspace $ws9; exec alacritty --command bash -c btop
@@ -360,7 +359,8 @@ bindsym $mod+Ctrl+r reload
 bindsym $mod+Ctrl+$alt+r restart
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+$alt+Ctrl+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+$alt+Ctrl+Shift+q exec i3-msg 'exit'
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
