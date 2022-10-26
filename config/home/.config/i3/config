@@ -151,14 +151,28 @@ set $ws20 "20 🎵"
 # workspace-monitor associations
 workspace $ws1 output $mon-main
 workspace $ws2 output $mon-main
+workspace $ws3 output $mon-main
+workspace $ws4 output $mon-main
 
+workspace $ws5 output $mon-left
+workspace $ws6 output $mon-left
+workspace $ws7 output $mon-left
+
+workspace $ws8 output $mon-right
+workspace $ws9 output $mon-right
 workspace $ws10 output $mon-right
 
 workspace $ws11 output $mon-left
+workspace $ws12 output $mon-left
+workspace $ws13 output $mon-left
+workspace $ws14 output $mon-left
+workspace $ws15 output $mon-left
+workspace $ws16 output $mon-left
 workspace $ws17 output $mon-left
 workspace $ws18 output $mon-left
 workspace $ws19 output $mon-left
 workspace $ws20 output $mon-left
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
