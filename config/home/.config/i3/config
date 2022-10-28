@@ -256,14 +256,39 @@ exec_always xsetroot -solid "#07070C"
 exec --no-startup-id numlockx on
 
 exec i3-msg 'workspace $ws1; exec brave-browser;'
-exec i3-msg 'workspace $ws10; exec alacritty --command clock; exec alacritty --command mtr 8.8.8.8;'
+exec --no-startup-id bash -c "sleep 1 && xdotool key super+alt+z"
 
 # Manual startup associated to workspaces
-# bindsym $mod+$alt+w     # "WORK"
-bindsym $mod+$alt+z workspace $ws15; exec code ~/.config/dotfiles/
-bindsym $mod+$alt+x workspace $ws10; exec alacritty --command clock; exec alacritty --command mtr 8.8.8.8
-bindsym $mod+$alt+c workspace $ws19; exec brave-browser --new-window https://gmail.com; exec brave-browser --new-window https://web.whatsapp.com
+
+# . - edit dotfiles
+bindsym $mod+$alt+period workspace $ws15; exec code ~/.config/dotfiles/
+
+# z - clock+mtr
+bindsym $mod+$alt+z workspace $ws10; exec alacritty --command mtr --displaymode 2 --curses 8.8.8.8; exec alacritty --command clock
+
+# x - comms (work)
+bindsym $mod+$alt+x workspace $ws18; exec discord; exec slack; exec brave-browser --new-window https://teams.microsoft.com/
+
+# c - comms (social)
+bindsym $mod+$alt+c workspace $ws19; exec brave-browser --new-window https://web.whatsapp.com; exec brave-browser --new-window https://gmail.com
+
+# m - music
 bindsym $mod+$alt+m workspace $ws20; exec spotify
+
+# n - remmina
+bindsym $mod+$alt+n workspace $ws11; exec remmina
+
+# Combos
+
+# w - work mode
+bindsym $mod+$alt+w exec --no-startup-id bash -c "true \
+&& xdotool key super+alt+x && sleep 6 \
+&& xdotool key super+alt+c && sleep 3 \
+&& xdotool key super+alt+m && sleep 3 \
+&& xdotool key super+alt+n && sleep 1 \
+"
+
+
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
