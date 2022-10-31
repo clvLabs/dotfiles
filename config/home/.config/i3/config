@@ -129,7 +129,7 @@ exec --no-startup-id numlockx on
 exec i3-msg 'workspace $ws1; exec brave-browser;'
 
 # Press super+alt+z (clock+mtr)
-exec --no-startup-id bash -c "sleep 1 && xdotool key super+alt+z"
+exec --no-startup-id bash -c "sleep 3 && xdotool key super+alt+z"
 
 
 # ###############################################
