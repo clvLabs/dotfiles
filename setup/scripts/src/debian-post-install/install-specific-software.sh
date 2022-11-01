@@ -4,6 +4,9 @@ log_highlight -
 log_highlight - [$APP_NAME] Installing specific packages
 log_highlight -
 
+# ~/bin created for locally installed app links
+mkdir -p ${HOME}/bin
+
 # ~/apps created for locally installed apps
 mkdir -p ${HOME}/apps
 
