@@ -1,9 +1,12 @@
 log_highlight -
-log_highlight - [$APP_NAME] Installing gitui
+log_highlight - [${APP_NAME}] Installing gitui
 log_highlight -
 
-SOURCE_PATH="https://github.com/extrawurst/gitui/releases/download/v0.21.0"
-SOURCE_FILE="gitui-linux-musl.tar.gz"
+VERSION="0.21.0"
+PLATFORM="linux-musl"
+
+SOURCE_PATH="https://github.com/extrawurst/gitui/releases/download/v${VERSION}"
+SOURCE_FILE="gitui-${PLATFORM}.tar.gz"
 
 DEST_PATH="${HOME}/apps/gitui"
 RUNCMD "mkdir -p ${DEST_PATH}"

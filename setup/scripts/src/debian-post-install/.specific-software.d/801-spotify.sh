@@ -1,5 +1,5 @@
 log_highlight -
-log_highlight - [$APP_NAME] Installing spotify
+log_highlight - [${APP_NAME}] Installing spotify
 log_highlight -
 
 RUNCMD "curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | sudo apt-key add - "

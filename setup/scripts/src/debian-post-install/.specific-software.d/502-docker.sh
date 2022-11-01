@@ -1,5 +1,5 @@
 log_highlight -
-log_highlight - [$APP_NAME] Installing docker
+log_highlight - [${APP_NAME}] Installing docker
 log_highlight -
 
 RUNCMD "sudo mkdir -p /etc/apt/keyrings"
@@ -8,7 +8,7 @@ RUNCMD "echo \"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyring
 RUNCMD "sudo apt-get update"
 RUNCMD "sudo apt-get -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin"
 RUNCMD "sudo groupadd docker"
-RUNCMD "sudo usermod -aG docker $USER"
+RUNCMD "sudo usermod -aG docker ${USER}"
 
 # See: https://unix.stackexchange.com/questions/18897/problem-while-running-newgrp-command-in-script
 # RUNCMD "newgrp docker"

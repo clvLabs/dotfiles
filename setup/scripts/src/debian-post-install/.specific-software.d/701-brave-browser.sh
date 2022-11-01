@@ -1,5 +1,5 @@
 log_highlight -
-log_highlight - [$APP_NAME] Installing brave-browser
+log_highlight - [${APP_NAME}] Installing brave-browser
 log_highlight -
 
 RUNCMD "sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg"

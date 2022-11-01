@@ -1,5 +1,5 @@
 log_highlight -
-log_highlight - [$APP_NAME] Installing blender
+log_highlight - [${APP_NAME}] Installing blender
 log_highlight -
 
 _MAJOR=3

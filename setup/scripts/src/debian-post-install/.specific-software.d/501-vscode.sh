@@ -1,5 +1,5 @@
 log_highlight -
-log_highlight - [$APP_NAME] Installing vscode
+log_highlight - [${APP_NAME}] Installing vscode
 log_highlight -
 
 RUNCMD "wget --no-verbose -O- https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor | sudo tee /usr/share/keyrings/vscode.gpg"
