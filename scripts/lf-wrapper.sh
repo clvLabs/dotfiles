@@ -1,5 +1,5 @@
 #!/bin/sh
-/usr/bin/lf "$@"
+${HOME}/bin/lf "$@"
 
 # set -e
 
