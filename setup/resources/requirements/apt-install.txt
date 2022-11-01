@@ -17,42 +17,40 @@ python3
 python3-dev
 python3-pip
 
-# System tools
+# System tools / utilities
 bat                    # A cat clone with wings
 curl                   # HTTP utility
-httpie                 # HTTP utility
+elinks                 # CLI www browser
 entr                   # File watcher
 exa                    # ls substitution
+flameshot              # Screen capture utility
 fzf                    # Fuzzy finder
+gimp                   # Image manipulation software
+httpie                 # HTTP utility
+i3                     # i3 tiling window manager
+i3lock                 # i3 screen locker
+inkscape               # Vector graphics software
 jq                     # Command-line JSON processor
+libreoffice            # Office suite
 mosh                   # ssh substitution
-net-tools              # Networking tools
+mpv                    # Movie player
 mtr                    # Better traceroute
 ncdu                   # ncurses disk usage viewer
+net-tools              # Networking tools
 nmap                   # Net/port scanner
+openscad               # Script based 3D CAD software
+remmina                # Remote desktop manager
 spacenavd              # Driver for 6-dof input devices
+sxiv                   # Image viewer
 tree                   # Show file tree
 vim                    # Text editor
+vpnc                   # VPN manager
 wget                   # HTTP utility
+wspanish               # Spanish dictionary (/usr/share/dict/spanish)
 xclip                  # Clipboard utility
+xdotool                # Window manager control from the terminal
+zsh                    # ZSH shell
 
 # Fonts
 fonts-firacode
 fonts-font-awesome
-
-# Utils
-elinks                 # CLI www browser
-flameshot              # Screen capture utility
-gimp                   # Image manipulation software
-i3                     # i3 tiling window manager
-i3lock                 # i3 screen locker
-inkscape               # Vector graphics software
-libreoffice            # Office suite
-mpv                    # Movie player
-openscad               # Script based 3D CAD software
-remmina                # Remote desktop manager
-sxiv                   # Image viewer
-vpnc                   # VPN manager
-wspanish               # Spanish dictionary (/usr/share/dict/spanish)
-xdotool                # Window manager control from the terminal
-zsh                    # ZSH shell
