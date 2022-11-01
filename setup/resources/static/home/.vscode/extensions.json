@@ -1,0 +1,15 @@
+{
+    "recommendations": [
+        "alefragnani.bookmarks",
+        "editorconfig.editorconfig",
+        "antyos.openscad",
+        "platformio.platformio-ide",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "remisa.shellman",
+        "dakara.transformer",
+        "vscode-icons-team.vscode-icons",
+        "tomoki1207.pdf",
+        "redhat.vscode-xml"
+    ]
+}
