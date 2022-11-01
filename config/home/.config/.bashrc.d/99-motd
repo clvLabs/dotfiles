@@ -12,7 +12,7 @@ ICON=$(echo $ALLICONS | shuf -n1)
 # echo $COLOR\[ $C $L $V \]$RESET_COLOR $ICON
 
 # cnquote -> ChuckNorris Quote
-# crontab: 0 0 * * * /home/tony/bin/cnquote > /etc/motd
+# crontab: 0 0 * * * ${HOME}/bin/cnquote > /etc/motd
 MOTD=$(cat /etc/motd)
 echo $COLOR\[ $MOTD \]$RESET_COLOR $ICON
 

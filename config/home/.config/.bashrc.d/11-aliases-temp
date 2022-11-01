@@ -3,7 +3,7 @@
 # TunasDB query via API
 function sql {
   _OLDPWD=$(pwd)
-  cd /home/tony/src/dorna/tvgfx/tonyaguilar/sql-queries/
+  cd ${HOME}/src/dorna/tvgfx/tonyaguilar/sql-queries/
   python3 -u query.py $@
   cd $_OLDPWD
 }
