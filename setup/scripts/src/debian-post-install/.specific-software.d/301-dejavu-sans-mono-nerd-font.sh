@@ -14,4 +14,4 @@ TEMP_FOLDER=$(mktemp -d)
 RUNCMD "wget --no-verbose -O ${TEMP_FOLDER}/${SOURCE_FILE} ${SOURCE_PATH}/${SOURCE_FILE}"
 RUNCMD "sudo unzip ${TEMP_FOLDER}/${SOURCE_FILE} -d ${DEST_PATH}"
 RUNCMD "rm -rf ${TEMP_FOLDER}"
-RUNCMD "fc-cache --force --verbose"
+RUNCMD "fc-cache --force"
