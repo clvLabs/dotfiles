@@ -16,7 +16,7 @@ RUNCMD "mkdir -p ${DEST_PATH}"
 
 TEMP_FOLDER=$(mktemp -d)
 
-RUNCMD "wget -O ${TEMP_FOLDER}/${XZ_FILE} ${SOURCE_PATH}/${XZ_FILE}"
+RUNCMD "wget --no-verbose -O ${TEMP_FOLDER}/${XZ_FILE} ${SOURCE_PATH}/${XZ_FILE}"
 RUNCMD "cd ${TEMP_FOLDER}; xz -dv ${XZ_FILE}"
 RUNCMD "tar xvf ${TAR_FILE} -C ${DEST_PATH}"
 RUNCMD "ln -sf ${DEST_PATH}/${PACKAGE}/blender ${HOME}/bin/blender"
