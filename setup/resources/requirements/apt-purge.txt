@@ -12,7 +12,6 @@ deja-dup
 gedit
 gnome-calculator
 gnome-calendar
-gnome-contacts
 gnome-firmware
 gnome-maps
 gnome-screenshot
@@ -32,9 +31,6 @@ gnome-music
 gnome-sound-recorder
 rhythbox
 rhythbox-data
-rygel
-rygel-playbin
-rygel-tracker
 sound-juicer
 totem
 
@@ -67,12 +63,7 @@ simple-scan
 # Junk internet
 epiphany-browser
 epiphany-browser-data
-evolution
-evolution-common
-evolution-data-server
-evolution-data-server-common
 firefox-esr
-gnome-online-miners
 hexchat
 pidgin
 thunderbird
