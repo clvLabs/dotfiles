@@ -14,10 +14,11 @@
 
 
 [user]
-	email = onixag@gmail.com
-	name = Tony Aguilar
+    email = onixag@gmail.com
+    name = Tony Aguilar
+
 [push]
-	default = simple
+    default = simple
 
 [includeIf "gitdir:~/src/dorna/"]
     path = ~/src/dorna/.gitconfig
