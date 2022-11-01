@@ -7,8 +7,8 @@ DISTANCE=${2:-$DEFAULT_DISTANCE}
 
 echo -
 echo - Keeping computer awake...
-echo - Delay: $DELAY
-echo - Distance: $DISTANCE
+echo - Delay: ${DELAY}
+echo - Distance: ${DISTANCE}
 echo -
 echo - Press CTRL+C to stop
 echo -
@@ -17,17 +17,17 @@ function move_cycle {
   for iteratin in {1..4}
   do
     echo -en "  → → → → \r"
-    xdotool mousemove_relative $DISTANCE 0
-    sleep $DELAY
+    xdotool mousemove_relative ${DISTANCE} 0
+    sleep ${DELAY}
     echo -en "  ↓ ↓ ↓ ↓ \r"
-    xdotool mousemove_relative 0 $DISTANCE
-    sleep $DELAY
+    xdotool mousemove_relative 0 ${DISTANCE}
+    sleep ${DELAY}
     echo -en "  ← ← ← ← \r"
     xdotool mousemove_relative -- -${DISTANCE} 0
-    sleep $DELAY
+    sleep ${DELAY}
     echo -en "  ↑ ↑ ↑ ↑ \r"
     xdotool mousemove_relative -- 0 -${DISTANCE}
-    sleep $DELAY
+    sleep ${DELAY}
   done
 }
 

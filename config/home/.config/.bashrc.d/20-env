@@ -1,10 +1,10 @@
-export PATH="$HOME/bin:$PATH"
+export PATH="${HOME}/bin:${PATH}"
 export EDITOR=vim
 export PAGER="batcat --paging=always"
 export MANPAGER="sh -c 'col -bx | batcat --paging=always --language man --plain'"
 
 # FIX Windows drive's file color
-export LS_COLORS=$LS_COLORS:'ow=0:'
+export LS_COLORS=${LS_COLORS}:'ow=0:'
 
 # sxiv config folder
 export XDG_CONFIG_HOME=~/.config

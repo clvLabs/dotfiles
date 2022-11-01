@@ -1,4 +1,4 @@
 #!/bin/bash
 CLIPBOARD="$(xclip -o)"
 
-[ -d "$CLIPBOARD" ] && export PWD=$CLIPBOARD
+[ -d "${CLIPBOARD}" ] && export PWD=${CLIPBOARD}

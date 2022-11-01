@@ -1,7 +1,6 @@
 #!/bin/zsh
-url="https://api.chucknorris.io/jokes/random?category=dev,science,history"
+URL="https://api.chucknorris.io/jokes/random?category=dev,science,history"
 
-joke_json=$(curl -s $url)
+JOKE_JSON=$(curl -s ${URL})
 
-echo $joke_json \
-| jq --raw-output '.value'
+echo ${JOKE_JSON} | jq --raw-output '.value'

@@ -7,17 +7,17 @@ RESET_COLOR='\e[39m'
 # V=`grep '^v.*$' /usr/share/dict/spanish | shuf -n1 | tr 'a-z' 'A-Z'`
 
 ALLICONS="🤣\n🙂\n🤔\n🙄\n🤓\n🤠\n🤡\n🤢\n👿\n👺\n💀\n👻\n👽\n👾\n🤖\n💩"
-ICON=$(echo $ALLICONS | shuf -n1)
+ICON=$(echo ${ALLICONS} | shuf -n1)
 
-# echo $COLOR\[ $C $L $V \]$RESET_COLOR $ICON
+# echo ${COLOR}\[ ${C} ${L} ${V} \]${RESET_COLOR} ${ICON}
 
 # cnquote -> ChuckNorris Quote
 # crontab: 0 0 * * * ${HOME}/bin/cnquote > /etc/motd
 MOTD=$(cat /etc/motd)
-echo $COLOR\[ $MOTD \]$RESET_COLOR $ICON
+echo ${COLOR}\[ ${MOTD} \]${RESET_COLOR} ${ICON}
 
 
-# rae $C $L $V -S
+# rae ${C} ${L} ${V} -S
 
 unset COLOR
 unset RESET_COLOR

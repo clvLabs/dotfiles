@@ -63,7 +63,7 @@ SPACESHIP_VENV_PREFIX=" \b"
 
 SPACESHIP_PROMPT_ASYNC=0
 
-source $ZSH_CONFIG_BASE/themes/spaceship-prompt/spaceship.zsh
+source ${ZSH_CONFIG_BASE}/themes/spaceship-prompt/spaceship.zsh
 
 # syntax highlighting plugin
-source $ZSH_CONFIG_BASE/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ${ZSH_CONFIG_BASE}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
