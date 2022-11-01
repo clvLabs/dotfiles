@@ -18,21 +18,21 @@ python3-dev
 python3-pip
 
 # System tools
-bat
-curl
-httpie
-entr
-exa
-fzf
-jq
-mosh
-net-tools
-mtr
-nmap
-tree
-vim
-wget
-xclip
+bat                    # A cat clone with wings
+curl                   # HTTP utility
+httpie                 # HTTP utility
+entr                   # File watcher
+exa                    # ls substitution
+fzf                    # Fuzzy finder
+jq                     # Command-line JSON processor
+mosh                   # ssh substitution
+net-tools              # Networking tools
+mtr                    # Better traceroute
+nmap                   # Net/port scanner
+tree                   # Show file tree
+vim                    # Text editor
+wget                   # HTTP utility
+xclip                  # Clipboard utility
 
 # Fonts
 fonts-firacode
