@@ -7,16 +7,17 @@ _MINOR=3
 _PATCH=0
 
 PACKAGE="blender-${_MAJOR}.${_MINOR}.${_PATCH}-linux-x64"
-SOURCE_URL="https://download.blender.org/release/Blender${_MAJOR}.${_MINOR}/${PACKAGE}.tar.xz"
+SOURCE_PATH="https://download.blender.org/release/Blender${_MAJOR}.${_MINOR}"
+XZ_FILE="${PACKAGE}.tar.xz"
+TAR_FILE="${PACKAGE}.tar"
+
+DEST_PATH="${HOME}/apps/blender"
+RUNCMD "mkdir -p ${DEST_PATH}"
 
 TEMP_FOLDER=$(mktemp -d)
 
-XZ_FILE="${TEMP_FOLDER}/${PACKAGE}.tar.xz"
-TAR_FILE="${TEMP_FOLDER}/${PACKAGE}.tar"
-
-RUNCMD "wget -O $XZ_FILE $SOURCE_URL"
-RUNCMD "cd $TEMP_FOLDER; xz -dv $XZ_FILE"
-RUNCMD "mkdir -p $HOME/blender"
-RUNCMD "tar xvf $TAR_FILE -C $HOME/blender"
-RUNCMD "ln -sf $HOME/blender/${PACKAGE}/blender $HOME/bin/blender"
-RUNCMD "sudo rm -rf $TEMP_FOLDER"
+RUNCMD "wget -O ${TEMP_FOLDER}/${XZ_FILE} ${SOURCE_PATH}/${XZ_FILE}"
+RUNCMD "cd ${TEMP_FOLDER}; xz -dv ${XZ_FILE}"
+RUNCMD "tar xvf ${TAR_FILE} -C ${DEST_PATH}"
+RUNCMD "ln -sf ${DEST_PATH}/${PACKAGE}/blender ${HOME}/bin/blender"
+RUNCMD "rm -rf ${TEMP_FOLDER}"
