@@ -41,7 +41,8 @@ log_highlight -
 
 RUNCMD "sudo chown $USER:$USER /etc/motd"
 
-CRON_TEMPFILE=$(mktemp)
+CRON_TEMPFILE=$(mktemp -t ${APP_NAME}-cron-tempfile-XXXXXX)
+
 RUNCMD "crontab -l > $CRON_TEMPFILE"
 RUNCMD "touch $CRON_TEMPFILE"
 RUNCMD "cat $SETUP_RESOURCES_DIR/partial/crontab >> $CRON_TEMPFILE"

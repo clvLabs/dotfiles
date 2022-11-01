@@ -75,7 +75,7 @@ fi
 if [ ! -z $DEBUG ]; then
   LOG_TEMPFILE=/dev/null
 else
-  LOG_TEMPFILE=$(mktemp)
+  LOG_TEMPFILE=$(mktemp -t ${APP_NAME}-log-tempfile-XXXXXX)
 fi
 
 # Show title

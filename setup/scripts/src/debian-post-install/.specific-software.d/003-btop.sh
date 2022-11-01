@@ -8,7 +8,8 @@ PLATFORM="x86_64-linux-musl"
 SOURCE_PATH="https://github.com/aristocratos/btop/releases/download/v${VERSION}"
 SOURCE_FILE="btop-${PLATFORM}.tbz"
 
-TEMP_FOLDER=$(mktemp -d)
+TEMP_FOLDER=$(mktemp -d -t ${APP_NAME}-btop-XXXXXX)
+
 RUNCMD "wget --no-verbose -O ${TEMP_FOLDER}/${SOURCE_FILE}"
 RUNCMD "mkdir -p ${TEMP_FOLDER}/extracted"
 RUNCMD "tar -xjf ${TEMP_FOLDER}/${SOURCE_FILE} -C ${TEMP_FOLDER}/extracted"

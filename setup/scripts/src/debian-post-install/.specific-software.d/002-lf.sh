@@ -11,7 +11,8 @@ SOURCE_FILE="lf-${PLATFORM}.tar.gz"
 DEST_PATH="${HOME}/apps/lf"
 RUNCMD "mkdir -p ${DEST_PATH}"
 
-TEMP_FOLDER=$(mktemp -d)
+TEMP_FOLDER=$(mktemp -d -t ${APP_NAME}-lf-XXXXXX)
+
 RUNCMD "wget --no-verbose -O ${TEMP_FOLDER}/${SOURCE_FILE} ${SOURCE_PATH}/${SOURCE_FILE}"
 RUNCMD "tar xvzf ${TEMP_FOLDER}/${SOURCE_FILE} -C ${DEST_PATH}"
 RUNCMD "ln -s ${DEST_PATH}/lf ${HOME}/bin/lf"
