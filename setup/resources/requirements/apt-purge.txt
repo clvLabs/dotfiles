@@ -9,9 +9,9 @@ anacron
 # Junk accessories
 debian-reference-common
 deja-dup
+gedit
 gnome-firmware
 gnome-screenshot
-gnome-text-editor
 gnome-todo
 gnote
 goldendict
