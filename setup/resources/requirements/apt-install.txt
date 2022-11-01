@@ -28,6 +28,7 @@ jq                     # Command-line JSON processor
 mosh                   # ssh substitution
 net-tools              # Networking tools
 mtr                    # Better traceroute
+ncdu                   # ncurses disk usage viewer
 nmap                   # Net/port scanner
 spacenavd              # Driver for 6-dof input devices
 tree                   # Show file tree
