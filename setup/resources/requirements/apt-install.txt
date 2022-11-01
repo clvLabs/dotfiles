@@ -27,6 +27,7 @@ fzf
 jq
 mosh
 net-tools
+mtr
 nmap
 tree
 vim
