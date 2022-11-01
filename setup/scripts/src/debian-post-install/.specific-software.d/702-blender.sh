@@ -18,6 +18,6 @@ TEMP_FOLDER=$(mktemp -d -t ${APP_NAME}-blender-XXXXXX)
 
 RUNCMD "wget --no-verbose -O ${TEMP_FOLDER}/${SOURCE_FILE} ${SOURCE_PATH}/${SOURCE_FILE}"
 RUNCMD "cd ${TEMP_FOLDER}; xz -dv ${SOURCE_FILE}"
-RUNCMD "tar xvf ${TEMP_FOLDER}/${TAR_FILE} -C ${DEST_PATH}"
+RUNCMD "tar xf ${TEMP_FOLDER}/${TAR_FILE} -C ${DEST_PATH}"
 RUNCMD "ln -sf ${DEST_PATH}/${PACKAGE}/blender ${HOME}/bin/blender"
 RUNCMD "rm -rf ${TEMP_FOLDER}"
