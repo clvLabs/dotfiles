@@ -29,6 +29,7 @@ mosh                   # ssh substitution
 net-tools              # Networking tools
 mtr                    # Better traceroute
 nmap                   # Net/port scanner
+spacenavd              # Driver for 6-dof input devices
 tree                   # Show file tree
 vim                    # Text editor
 wget                   # HTTP utility
