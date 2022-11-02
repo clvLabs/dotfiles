@@ -3,9 +3,6 @@
 
 # Based on: github.com/LostByteSoft/Debian-10
 
-# Junk system
-anacron
-
 # Junk accessories
 debian-reference-common
 deja-dup
