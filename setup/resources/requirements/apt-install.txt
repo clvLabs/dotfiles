@@ -42,6 +42,7 @@ openscad               # Script based 3D CAD software
 remmina                # Remote desktop manager
 spacenavd              # Driver for 6-dof input devices
 sxiv                   # Image viewer
+texlive-xetex          # Requirement for Pandoc md2pdf
 tree                   # Show file tree
 vim                    # Text editor
 vpnc                   # VPN manager
