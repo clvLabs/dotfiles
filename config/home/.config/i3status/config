@@ -120,6 +120,7 @@ vpn_status {
       format = "vpn"
       check_pid = true
       pidfile = "/sys/class/net/tun0/dev_id"
+      color_bad = '#777777'
 }
 
 # ---------------------------------------------------------------
