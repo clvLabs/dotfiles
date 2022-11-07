@@ -68,7 +68,7 @@ set $mon-right DP-2
 #  Workspaces
 #
 set $ws1 "1 🌍"
-set $ws2 "2 🔧"
+set $ws2 "2 🛠️"
 set $ws3 "3 🔧"
 set $ws4 "4 🔧"
 set $ws5 "5 🔧"
@@ -81,15 +81,16 @@ set $ws11 "11 🏁"
 set $ws12 "12 🔧"
 set $ws13 "13 🔧"
 set $ws14 "14 🔧"
-set $ws15 "15 🔧"
+set $ws15 "15 ⚙️"
 set $ws16 "16 🔧"
-set $ws17 "17 📺"
-set $ws18 "18 📢"
-set $ws19 "19 📫"
-set $ws20 "20 🎵"
+set $ws17 "17 🖥️"
+set $ws18 "18 🐒"
+set $ws19 "19 ☎️"
+set $ws20 "20 🎧"
 
 # workspace-monitor associations
-workspace $ws1 output $mon-main
+workspace $ws1 output $mon-left
+
 workspace $ws2 output $mon-main
 workspace $ws3 output $mon-main
 workspace $ws4 output $mon-main
@@ -97,15 +98,17 @@ workspace $ws4 output $mon-main
 workspace $ws5 output $mon-left
 workspace $ws6 output $mon-left
 workspace $ws7 output $mon-left
+workspace $ws8 output $mon-left
 
-workspace $ws8 output $mon-right
 workspace $ws9 output $mon-right
 workspace $ws10 output $mon-right
 
 workspace $ws11 output $mon-left
-workspace $ws12 output $mon-left
-workspace $ws13 output $mon-left
-workspace $ws14 output $mon-left
+
+workspace $ws12 output $mon-main
+workspace $ws13 output $mon-main
+workspace $ws14 output $mon-main
+
 workspace $ws15 output $mon-left
 workspace $ws16 output $mon-left
 workspace $ws17 output $mon-left
