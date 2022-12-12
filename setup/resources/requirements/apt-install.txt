@@ -19,6 +19,7 @@ python3-pip
 
 # System tools / utilities
 bat                    # A cat clone with wings
+blueman                # Bluetooth utilities
 curl                   # HTTP utility
 elinks                 # CLI www browser
 entr                   # File watcher
@@ -39,6 +40,7 @@ ncdu                   # ncurses disk usage viewer
 net-tools              # Networking tools
 nmap                   # Net/port scanner
 openscad               # Script based 3D CAD software
+playerctl              # Command-line utility and library for controlling media players
 remmina                # Remote desktop manager
 spacenavd              # Driver for 6-dof input devices
 sxiv                   # Image viewer
