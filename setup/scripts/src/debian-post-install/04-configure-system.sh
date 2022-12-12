@@ -41,10 +41,28 @@ log_highlight -
 
 RUNCMD "sudo chown ${USER}:${USER} /etc/motd"
 
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
+log_highlight - [${APP_NAME}] Configuring user crontab
+log_highlight -
+
 CRON_TEMPFILE=$(mktemp -t ${APP_NAME}-cron-tempfile-XXXXXX)
 
 RUNCMD "crontab -l > ${CRON_TEMPFILE}"
 RUNCMD "touch ${CRON_TEMPFILE}"
-RUNCMD "cat ${SETUP_RESOURCES_DIR}/partial/crontab >> ${CRON_TEMPFILE}"
+RUNCMD "cat ${SETUP_RESOURCES_DIR}/partial/crontab-user >> ${CRON_TEMPFILE}"
 RUNCMD "crontab ${CRON_TEMPFILE}"
+RUNCMD "rm ${CRON_TEMPFILE}"
+
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
+log_highlight - [${APP_NAME}] Configuring root crontab
+log_highlight -
+
+CRON_TEMPFILE=$(mktemp -t ${APP_NAME}-cron-tempfile-XXXXXX)
+
+RUNCMD "sudo crontab -l > ${CRON_TEMPFILE}"
+RUNCMD "touch ${CRON_TEMPFILE}"
+RUNCMD "cat ${SETUP_RESOURCES_DIR}/partial/crontab-root >> ${CRON_TEMPFILE}"
+RUNCMD "sudo crontab ${CRON_TEMPFILE}"
 RUNCMD "rm ${CRON_TEMPFILE}"
