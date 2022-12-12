@@ -50,7 +50,7 @@ CRON_TEMPFILE=$(mktemp -t ${APP_NAME}-cron-tempfile-XXXXXX)
 
 RUNCMD "crontab -l > ${CRON_TEMPFILE}"
 RUNCMD "touch ${CRON_TEMPFILE}"
-RUNCMD "cat ${SETUP_RESOURCES_DIR}/partial/crontab-user >> ${CRON_TEMPFILE}"
+RUNCMD "cat ${SETUP_RESOURCES_DIR}/partial/crontab/user >> ${CRON_TEMPFILE}"
 RUNCMD "crontab ${CRON_TEMPFILE}"
 RUNCMD "rm ${CRON_TEMPFILE}"
 
@@ -63,6 +63,6 @@ CRON_TEMPFILE=$(mktemp -t ${APP_NAME}-cron-tempfile-XXXXXX)
 
 RUNCMD "sudo crontab -l > ${CRON_TEMPFILE}"
 RUNCMD "touch ${CRON_TEMPFILE}"
-RUNCMD "cat ${SETUP_RESOURCES_DIR}/partial/crontab-root >> ${CRON_TEMPFILE}"
+RUNCMD "cat ${SETUP_RESOURCES_DIR}/partial/crontab/root >> ${CRON_TEMPFILE}"
 RUNCMD "sudo crontab ${CRON_TEMPFILE}"
 RUNCMD "rm ${CRON_TEMPFILE}"
