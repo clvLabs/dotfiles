@@ -4,6 +4,7 @@
 # Based on: github.com/LostByteSoft/Debian-10
 
 # Junk accessories
+cheese
 debian-reference-common
 deja-dup
 gedit
@@ -22,8 +23,6 @@ yelp
 # Junk audio
 brasero
 brasero-common
-cheese
-cheese-common
 gnome-music
 gnome-sound-recorder
 rhythbox
