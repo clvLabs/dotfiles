@@ -304,8 +304,8 @@ bindsym $mod+$alt+period \
 # z - clock+mtr
 bindsym $mod+$alt+z \
   workspace $ws10; \
-  exec alacritty --command mtr --displaymode 2 --curses 8.8.8.8; \
-  exec alacritty --command clock
+  exec alacritty --command clock; \
+  exec alacritty --command mtr --displaymode 2 --curses 8.8.8.8
 
 # x - comms (work)
 bindsym $mod+$alt+x \
