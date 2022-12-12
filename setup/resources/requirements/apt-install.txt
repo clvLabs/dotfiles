@@ -17,6 +17,10 @@ python3
 python3-dev
 python3-pip
 
+# Drivers
+nvidia-driver          # NVidia card drivers
+spacenavd              # Driver for 6-dof input devices
+
 # System tools / utilities
 bat                    # A cat clone with wings
 blueman                # Bluetooth utilities
@@ -43,7 +47,6 @@ nmap                   # Net/port scanner
 openscad               # Script based 3D CAD software
 playerctl              # Command-line utility and library for controlling media players
 remmina                # Remote desktop manager
-spacenavd              # Driver for 6-dof input devices
 sxiv                   # Image viewer
 texlive-xetex          # Requirement for Pandoc md2pdf
 tree                   # Show file tree
