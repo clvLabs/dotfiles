@@ -43,6 +43,14 @@ RUNCMD "sudo chown ${USER}:${USER} /etc/motd"
 
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -
+log_highlight - [${APP_NAME}] Configuring user profile
+log_highlight -
+
+RUNCMD "touch ${HOME}/.profile"
+RUNCMD "cat ${SETUP_RESOURCES_DIR}/partial/home/.profile >> ${HOME}/.profile"
+
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
 log_highlight - [${APP_NAME}] Configuring user crontab
 log_highlight -
 
