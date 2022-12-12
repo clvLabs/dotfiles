@@ -25,6 +25,7 @@ spacenavd              # Driver for 6-dof input devices
 bat                    # A cat clone with wings
 blueman                # Bluetooth utilities
 curl                   # HTTP utility
+cifs-utils             # Utilities for managing mounts of CIFS network file systems
 elinks                 # CLI www browser
 entr                   # File watcher
 exa                    # ls substitution
@@ -37,6 +38,7 @@ i3                     # i3 tiling window manager
 i3lock                 # i3 screen locker
 inkscape               # Vector graphics software
 jq                     # Command-line JSON processor
+kmag                   # On-screen magnifier
 libreoffice            # Office suite
 mosh                   # ssh substitution
 mpv                    # Movie player
