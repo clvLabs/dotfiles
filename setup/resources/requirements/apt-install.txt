@@ -60,6 +60,11 @@ xclip                  # Clipboard utility
 xdotool                # Window manager control from the terminal
 zsh                    # ZSH shell
 
+# Virtualization
+qemu-system
+libvirt-daemon-system
+virt-manager
+
 # Fonts
 fonts-firacode
 fonts-font-awesome

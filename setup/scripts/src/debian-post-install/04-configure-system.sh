@@ -74,3 +74,9 @@ RUNCMD "touch ${CRON_TEMPFILE}"
 RUNCMD "cat ${SETUP_RESOURCES_DIR}/partial/crontab/root >> ${CRON_TEMPFILE}"
 RUNCMD "sudo crontab ${CRON_TEMPFILE}"
 RUNCMD "rm ${CRON_TEMPFILE}"
+
+log_highlight - ----------------------------------------------------------------------------
+log_highlight -
+log_highlight - [${APP_NAME}] Adding user to libvirt group
+log_highlight -
+RUNCMD "sudo adduser ${USER} libvirt"
