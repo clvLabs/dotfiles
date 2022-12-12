@@ -2,7 +2,7 @@ log_highlight -
 log_highlight - [${APP_NAME}] Installing slack
 log_highlight -
 
-VERSION="4.0.2"
+VERSION="4.29.149"
 PLATFORM="amd64"
 
 SOURCE_PATH="https://downloads.slack-edge.com/linux_releases"
