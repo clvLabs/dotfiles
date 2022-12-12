@@ -6,6 +6,8 @@
 #
 # This script customizes a fresh-installed Debian.
 #
+# Create a VM_SETUP env variable to enable VM setup mode.
+#
 
 
 # ############################################################################
