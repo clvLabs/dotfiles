@@ -48,6 +48,7 @@ nmap                   # Net/port scanner
 openscad               # Script based 3D CAD software
 playerctl              # Command-line utility and library for controlling media players
 remmina                # Remote desktop manager
+rsync                  # File-copying tool
 sxiv                   # Image viewer
 texlive-xetex          # Requirement for Pandoc md2pdf
 tree                   # Show file tree
