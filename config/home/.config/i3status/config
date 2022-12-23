@@ -143,5 +143,5 @@ my_weather_owm {
 # ---------------------------------------------------------------
 order += "tztime local"
 tztime local {
-        format = "%Y%m%d %H%M"
+        format = "%y-%m-%d %H:%M"
 }
