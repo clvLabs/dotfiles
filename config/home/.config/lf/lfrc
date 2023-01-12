@@ -144,6 +144,7 @@ map oi &sxiv "$PWD" # Open with sxiv
 map ol $echo "$fx" | tr "\n" " " | xargs batcat --style=full --paging=always  # Open with less
 map om &mpv "$f"  # Open with mpv
 map on $nano "$f" # Open with nano
+map ot &nautilus "$f" # Open with nautilus
 map ov $vim "$f" # Open with vim
 
 # Calc all dir sizes
