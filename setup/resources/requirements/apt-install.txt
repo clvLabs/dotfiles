@@ -29,6 +29,7 @@ elinks                 # CLI www browser
 entr                   # File watcher
 exa                    # ls substitution
 flameshot              # Screen capture utility
+ftp                    # Classical file transfer client
 fzf                    # Fuzzy finder
 gimp                   # Image manipulation software
 libhidapi-dev          # Multi-Platform library for communication with HID devices
@@ -39,6 +40,7 @@ inkscape               # Vector graphics software
 jq                     # Command-line JSON processor
 kmag                   # On-screen magnifier
 libreoffice            # Office suite
+libnotify-bin          # Desktop notifications
 mosh                   # ssh substitution
 mpv                    # Movie player
 mtr                    # Better traceroute
