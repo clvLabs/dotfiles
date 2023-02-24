@@ -33,6 +33,7 @@ ftp                    # Classical file transfer client
 fzf                    # Fuzzy finder
 gimp                   # Image manipulation software
 libhidapi-dev          # Multi-Platform library for communication with HID devices
+hstr                   # History search utility
 httpie                 # HTTP utility
 i3                     # i3 tiling window manager
 i3lock                 # i3 screen locker

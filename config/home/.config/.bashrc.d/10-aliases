@@ -67,3 +67,4 @@ alias ssh='TERM=xterm-256color ssh'
 
 alias mosh='LC_ALL="en_US.UTF-8" mosh'
 
+alias hh=hstr

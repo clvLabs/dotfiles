@@ -8,3 +8,6 @@ export LS_COLORS=${LS_COLORS}:'ow=0:'
 
 # sxiv config folder
 export XDG_CONFIG_HOME=~/.config
+
+# hstr configuration
+export HSTR_CONFIG=hicolor,regexp-matching
