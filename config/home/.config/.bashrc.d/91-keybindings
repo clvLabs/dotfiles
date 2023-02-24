@@ -1,0 +1,3 @@
+
+# Bind CTRL-R to hstr for history browsing
+bindkey -s "\C-r" "\C-a hstr -- \C-j"
