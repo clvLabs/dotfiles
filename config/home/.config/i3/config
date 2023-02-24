@@ -238,7 +238,7 @@ bindsym --whole-window --border $mod+Ctrl+$alt+button5 exec --no-startup-id pact
 #
 
 # start dmenu (program launcher)
-bindsym $mod+d exec "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#005577' -sf '#EEEEEE' -fn 'monospace-15' -p ''"
+bindsym $mod+d exec "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#005577' -sf '#EEEEEE' -fn 'monospace-15' -i -p ''"
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -277,6 +277,7 @@ bindsym $mod+Print exec --no-startup-id gnome-screenshot -i
 # start a terminal
 bindsym $mod+Return exec alacritty
 bindsym $mod+KP_Enter exec alacritty
+bindsym $mod+F5 exec alacritty
 
 # start a floating terminal
 for_window [title="floating-terminal"] floating enable
@@ -286,6 +287,7 @@ bindsym $mod+Shift+KP_Enter exec alacritty --title "floating-terminal"
 # start a floating python3 terminal
 for_window [title="floating-python"] floating enable
 bindsym $mod+Shift+p exec alacritty --title "floating-python" --config-file ~/.config/alacritty/python.yml --command python3
+bindsym $mod+F6 exec alacritty --title "floating-python" --config-file ~/.config/alacritty/python.yml --command python3
 
 # start a vscode window
 bindsym $mod+c exec code -n
@@ -351,6 +353,13 @@ bindsym $mod+$alt+w exec --no-startup-id bash -c "true \
 
 # Volume controls
 
+# Mute / Mod+F9 : Mute
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $(pactl info|grep -oP "(?<=Default Sink: ).*") toggle
+bindsym $mod+F9 exec --no-startup-id pactl set-sink-mute $(pactl info|grep -oP "(?<=Default Sink: ).*") toggle
+
+# Mod+F10 : Set volume to 30% (fixed)
+bindsym $mod+F10 exec --no-startup-id pactl -- set-sink-volume $(pactl info|grep -oP "(?<=Default Sink: ).*") 30%
+
 # Volume up/down / Mod+F11/F12 : +/-10%
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume $(pactl info|grep -oP "(?<=Default Sink: ).*") +10%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume $(pactl info|grep -oP "(?<=Default Sink: ).*") -10%
@@ -361,25 +370,23 @@ bindsym $mod+F12 exec --no-startup-id pactl -- set-sink-volume $(pactl info|grep
 bindsym Ctrl+XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume $(pactl info|grep -oP "(?<=Default Sink: ).*") +1%
 bindsym Ctrl+XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume $(pactl info|grep -oP "(?<=Default Sink: ).*") -1%
 
-# Mute / Mod+F10 : Mute
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $(pactl info|grep -oP "(?<=Default Sink: ).*") toggle
-bindsym $mod+F10 exec --no-startup-id pactl set-sink-mute $(pactl info|grep -oP "(?<=Default Sink: ).*") toggle
-
 
 # Media player controls
 
-# Play / Mod+F1 : Play/Pause
+# Play / Mod+F1 : Play/Pause (Spotify)
 bindsym XF86AudioPlay exec playerctl --player=spotify play-pause
 bindsym $mod+F1 exec playerctl --player=spotify play-pause
 
-# Prev / Mod+F2 : Prev
+# Prev / Mod+F2 : Prev (Spotify)
 bindsym XF86AudioPrev exec playerctl --player=spotify previous
 bindsym $mod+F2 exec playerctl --player=spotify previous
 
-# Next / Mod+F3 : Next
+# Next / Mod+F3 : Next (Spotify)
 bindsym XF86AudioNext exec playerctl --player=spotify next
 bindsym $mod+F3 exec playerctl --player=spotify next
 
+# Mod+F4 : Play/Pause (Chromium)
+bindsym $mod+F4 exec playerctl --player="$(playerctl -l | grep chromium)"  play-pause
 
 # ---------------------------------
 #
