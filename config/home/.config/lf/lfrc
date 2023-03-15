@@ -140,7 +140,7 @@ map ob &brave-browser "$f" # Open with Brave
 map oc &code "$f" # Open with VSCode
 map od &xdg-open $f # Open with default program
 map oe $$EDITOR "$f" # Open with default editor
-map oi &sxiv "$PWD" # Open with sxiv
+map oi &sxiv -tfpqrs f "$PWD" # Open with sxiv
 map ol $echo "$fx" | tr "\n" " " | xargs batcat --style=full --paging=always  # Open with less
 map om &mpv "$f"  # Open with mpv
 map on $nano "$f" # Open with nano
