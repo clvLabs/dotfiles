@@ -289,6 +289,10 @@ for_window [title="floating-python"] floating enable
 bindsym $mod+Shift+p exec alacritty --title "floating-python" --config-file ~/.config/alacritty/python.yml --command python3
 bindsym $mod+F6 exec alacritty --title "floating-python" --config-file ~/.config/alacritty/python.yml --command python3
 
+# start a floating mpv
+for_window [title="floating-mpv"] floating enable
+bindsym $mod+F7 exec mpv --title="floating-mpv"
+
 # start a vscode window
 bindsym $mod+c exec code -n
 
