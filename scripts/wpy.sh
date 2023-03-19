@@ -1,2 +1,2 @@
 #!/bin/bash
-find | entr -ncr python3 -u ${@}
+find -name "*py" | entr -ncr python3 -u ${@}
