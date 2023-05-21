@@ -99,8 +99,9 @@ map b $ns # Open terminal in new window
 map gc cd ~/.config # Go to config folder
 map gd cd ~/Downloads # Go to downloads folder
 map gh cd ~ # Go to home folder
-map gt cd ~/src/dorna/tvgfx # Go to tvgfx folder
+map gl cd ~/Documents/cnc/laser/projects # Go to laser folder
 map gp cd ~/src/python # Go to python folder
+map gt cd ~/src/dorna/tvgfx # Go to tvgfx folder
 
 # [c]opy commands
 cmd _copy_current_path ${{
@@ -146,6 +147,7 @@ map om &mpv "$f"  # Open with mpv
 map on $nano "$f" # Open with nano
 map ot &nautilus "$f" # Open with nautilus
 map ov $vim "$f" # Open with vim
+map o4 $find -type f -name "*mp4" -exec mpv {} \+ # Open all mp4 files in folder
 
 # Calc all dir sizes
 cmd _calc_all_dir_sizes : {{
