@@ -143,6 +143,15 @@ log_success - [$APP_NAME] Sync finished successfully
 log_success -
 log_success - ----------------------------------------------------------------------------
 
+if [ -z $DOBACKUP ]; then
+  log_warning -
+  log_warning - PLEASE NOTE THIS WAS A DRY RUN !!!!
+  log_warning -
+  log_warning - Check results and call use the following to do the actual backup:
+  log_warning -  DOBACKUP=1 ${0}
+  log_warning -
+fi
+
 RUNCMD "sudo cp ${LOG_TEMPFILE} ${LAST_SYNC_LOG_FILE}"
 RUNCMD "sudo chown ${USER}:${USER} ${LAST_SYNC_LOG_FILE}"
 
