@@ -56,6 +56,26 @@ disk "/" {
         low_threshold = 20
 }
 
+# ---------------------------------------------------------------
+order += "disk /home"
+disk "/home" {
+        format = "🏠 %percentage_used"
+        threshold_type = "gbytes_avail"
+        low_threshold = 20
+}
+
+# ---------------------------------------------------------------
+order += "disk /media/nvme-1tb"
+disk "/media/nvme-1tb" {
+        format = "💾 %percentage_used"
+        threshold_type = "gbytes_avail"
+        low_threshold = 20
+}
+
+# ---------------------------------------------------------------
+order += "disk /media/docker-extra-ssd"
+disk "/media/docker-extra-ssd" {
+        format = "🐳 %percentage_used"
         threshold_type = "gbytes_avail"
         low_threshold = 20
 }
