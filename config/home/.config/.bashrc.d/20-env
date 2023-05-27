@@ -10,4 +10,4 @@ export LS_COLORS=${LS_COLORS}:'ow=0:'
 export XDG_CONFIG_HOME=~/.config
 
 # hstr configuration
-export HSTR_CONFIG=hicolor,regexp-matching
+export HSTR_CONFIG=hicolor,raw-history-view,keywords-matching
