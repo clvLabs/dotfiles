@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 CURR_DATE=$(date +%Y%m%d)
-LAST_UPDATE_FILE="${HOME}/.config/daily-apt-update-timestamp.txt"
+LAST_UPDATE_FILE="/home/tony/.config/daily-apt-update-timestamp.txt"
 LAST_UPDATE=$(cat ${LAST_UPDATE_FILE} 2>&1 > /dev/null)
 
 echo "Daily apt update"
