@@ -380,20 +380,33 @@ bindsym Ctrl+XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 
 
 # Media player controls
 
-# Play / Mod+F1 : Play/Pause (Spotify)
+# Mod+F1 : Play/Pause (Spotify)
 bindsym XF86AudioPlay exec playerctl --player=spotify play-pause
 bindsym $mod+F1 exec playerctl --player=spotify play-pause
 
-# Prev / Mod+F2 : Prev (Spotify)
+# Mod+F2 : Prev (Spotify)
 bindsym XF86AudioPrev exec playerctl --player=spotify previous
 bindsym $mod+F2 exec playerctl --player=spotify previous
 
-# Next / Mod+F3 : Next (Spotify)
+# Mod+F3 : Next (Spotify)
 bindsym XF86AudioNext exec playerctl --player=spotify next
 bindsym $mod+F3 exec playerctl --player=spotify next
 
+
+
+# Mod+Shift+F1 : Play/Pause (mpv)
+bindsym $mod+Shift+F1 exec --no-startup-id mpvctl "cycle pause"
+
+# Mod+Shift+F2 : Prev (mpv)
+bindsym $mod+Shift+F2 exec --no-startup-id mpvctl "playlist-prev"
+
+# Mod+Shift+F3 : Next (mpv)
+bindsym $mod+Shift+F3 exec --no-startup-id mpvctl "playlist-next"
+
+
+
 # Mod+F4 : Play/Pause (Chromium)
-bindsym $mod+F4 exec playerctl --player="$(playerctl -l | grep chromium)"  play-pause
+bindsym $mod+F4 exec playerctl --player="$(playerctl -l | grep brave)"  play-pause
 
 # ---------------------------------
 #
