@@ -826,7 +826,7 @@ mouse:
     hide_when_typing: false
 
 font:
-  size: 10.0
+  size: 14.0
   normal:
     family: DejaVuSansMono Nerd Font
     style: Regular
