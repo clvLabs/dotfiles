@@ -47,7 +47,7 @@ else
   LOG_TEMPFILE=$(mktemp)
 fi
 
-LAST_SYNC_LOG_FILE=/var/log/data-backup.log
+LAST_SYNC_LOG_FILE=/var/log/${APP_NAME}.log
 
 # ############################################################################
 #
