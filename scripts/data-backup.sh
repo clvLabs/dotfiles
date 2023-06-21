@@ -157,4 +157,6 @@ RUNCMD "sudo cp ${LOG_TEMPFILE} ${LAST_SYNC_LOG_FILE}"
 RUNCMD "sudo chown ${USER}:${USER} ${LAST_SYNC_LOG_FILE}"
 
 
-less --raw-control-chars --force ${LAST_SYNC_LOG_FILE}
+if [ -z $DEBUG ]; then
+  less --raw-control-chars --force ${LAST_SYNC_LOG_FILE}
+fi
