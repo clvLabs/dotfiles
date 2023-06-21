@@ -296,6 +296,9 @@ bindsym $mod+F7 exec mpv --title="floating-mpv"
 # start a lf terminal
 bindsym $mod+F8 exec alacritty --title "lf" --command lf
 
+# start nautilus
+bindsym $mod+Shift+F8 exec nautilus
+
 # start a vscode window
 bindsym $mod+c exec code -n
 
