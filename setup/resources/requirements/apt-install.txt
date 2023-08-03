@@ -43,6 +43,7 @@ kmag                   # On-screen magnifier
 libreoffice            # Office suite
 libnotify-bin          # Desktop notifications
 mosh                   # ssh substitution
+motion                 # Webcam motion detector/video streamer
 mpv                    # Movie player
 mtr                    # Better traceroute
 ncdu                   # ncurses disk usage viewer
@@ -57,6 +58,7 @@ sxiv                   # Image viewer
 texlive-xetex          # Requirement for Pandoc md2pdf
 tree                   # Show file tree
 vim                    # Text editor
+v4l-utils              # Video4Linux utilities
 vpnc                   # VPN manager
 wget                   # HTTP utility
 wspanish               # Spanish dictionary (/usr/share/dict/spanish)
