@@ -323,7 +323,6 @@ bindsym $mod+$alt+z \
 bindsym $mod+$alt+x \
   workspace $ws18; \
   exec discord; \
-  exec slack; \
   exec brave-browser --new-window https://teams.microsoft.com/
 
 # c - comms (social)
