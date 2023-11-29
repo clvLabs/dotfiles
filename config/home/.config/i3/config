@@ -345,7 +345,7 @@ bindsym $mod+$alt+m \
 # n - remmina
 bindsym $mod+$alt+n \
   workspace $ws11; \
-  exec remmina
+  exec remmina --icon
 
 
 # ---------------------------------
