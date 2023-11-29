@@ -347,6 +347,11 @@ bindsym $mod+$alt+n \
   workspace $ws11; \
   exec remmina --icon
 
+# t - teamviewer
+bindsym $mod+$alt+t \
+  workspace $ws5; \
+  exec teamviewer
+
 
 # ---------------------------------
 #
