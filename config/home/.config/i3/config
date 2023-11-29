@@ -305,6 +305,9 @@ bindsym $mod+Shift+F8 exec nautilus
 # start a vscode window
 bindsym $mod+c exec code -n
 
+# start inkscape
+bindsym $mod+$alt+i exec inkscape
+
 
 # ---------------------------------
 #
