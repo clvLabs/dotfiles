@@ -364,6 +364,7 @@ bindsym $mod+$alt+w exec --no-startup-id bash -c "true \
 && xdotool key super+alt+c && sleep 3 \
 && xdotool key super+alt+m && sleep 3 \
 && xdotool key super+alt+n && sleep 1 \
+&& xdotool key super+alt+t && sleep 1 \
 "
 
 # ---------------------------------
