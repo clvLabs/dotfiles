@@ -20,7 +20,6 @@ gnome-disks
 gnome-font-viewer
 gnome-software
 gnome-system-monitor
-gnome-tweaks
 inkscape
 kdenlive
 kmag
@@ -34,6 +33,7 @@ obs
 openscad
 postman
 remmina
+simplescreenrecorder
 sooperlooper
 spotify
 sqlitebrowser
