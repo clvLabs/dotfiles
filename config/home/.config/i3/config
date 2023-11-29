@@ -238,7 +238,7 @@ bindsym --whole-window --border $mod+Ctrl+$alt+button5 exec --no-startup-id pact
 #
 
 # start dmenu (program launcher)
-bindsym $mod+d exec "dmenu-bin -nf '#BBBBBB' -nb '#222222' -sb '#005577' -sf '#EEEEEE' -fn 'monospace-15' -i -p ''"
+bindsym $mod+d exec "dmenu-bin -i"
 
 # kill focused window
 bindsym $mod+Shift+q kill
