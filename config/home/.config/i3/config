@@ -418,6 +418,8 @@ bindsym $mod+Shift+F2 exec --no-startup-id mpvctl "playlist-prev"
 bindsym $mod+Shift+F3 exec --no-startup-id mpvctl "playlist-next"
 
 
+# Ctrl+Play : Play/Pause (Chromium)
+bindsym Ctrl+XF86AudioPause exec playerctl --player=spotify play-pause
 
 # Mod+F4 : Play/Pause (Chromium)
 bindsym $mod+F4 exec playerctl --player="$(playerctl -l | grep brave)"  play-pause
