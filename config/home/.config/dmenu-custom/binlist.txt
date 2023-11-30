@@ -5,6 +5,7 @@ audacity
 blender
 blueman-manager
 brave-browser
+bt
 code
 cool-retro-terminal
 cura
@@ -15,11 +16,10 @@ freecad
 gimp
 gnome-characters
 gnome-control-center
-gnome-disk-image-mounter
 gnome-disks
-gnome-font-viewer
 gnome-software
 gnome-system-monitor
+hp-scan
 inkscape
 kdenlive
 kmag
