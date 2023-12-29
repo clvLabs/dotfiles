@@ -44,6 +44,7 @@ alias tx='t --all --long'
 alias cat='batcat'
 
 alias fzf="fzf \
+-i \
 --multi \
 --color=dark,hl:#ff2222 \
 "
