@@ -302,6 +302,9 @@ bindsym $mod+F8 exec alacritty --title "lf" --command lf
 # start nautilus
 bindsym $mod+Shift+F8 exec nautilus
 
+# start a brave browser window
+bindsym $mod+b exec brave-browser --new-window
+
 # start a vscode window
 bindsym $mod+c exec code -n
 
