@@ -33,6 +33,7 @@ obs
 openscad
 postman
 remmina
+reset-display
 simplescreenrecorder
 sooperlooper
 spotify
