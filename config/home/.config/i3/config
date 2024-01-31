@@ -412,7 +412,7 @@ bindsym $mod+F3 exec playerctl --player=spotify next
 
 
 # Mod+Shift+F1 : Play/Pause (mpv)
-bindsym $mod+Shift+F1 exec --no-startup-id mpvctl "cycle pause"
+bindsym $mod+Shift+F4 exec --no-startup-id mpvctl "cycle pause"
 
 # Mod+Shift+F2 : Prev (mpv)
 bindsym $mod+Shift+F2 exec --no-startup-id mpvctl "playlist-prev"
