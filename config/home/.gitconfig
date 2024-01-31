@@ -28,3 +28,6 @@
 
 [includeIf "gitdir:~/src/dorna/"]
     path = ~/src/dorna/.gitconfig
+
+[protocol "file"]
+	allow = always
