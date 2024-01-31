@@ -52,6 +52,7 @@ nmap                   # Net/port scanner
 openscad               # Script based 3D CAD software
 playerctl              # Command-line utility and library for controlling media players
 remmina                # Remote desktop manager
+rename                 # Perl extension for renaming multiple files
 rsync                  # File-copying tool
 openssh-server         # SSH server
 sxiv                   # Image viewer
