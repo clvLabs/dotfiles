@@ -43,8 +43,21 @@ alias tx='t --all --long'
 
 alias cat='batcat'
 
+alias pstree="pstree \
+--color=age \
+-h \
+-l \
+-n \
+-p \
+-s \
+-U \
+"
+
 alias fzf="fzf \
 -i \
+--tac \
+--no-sort \
+--ansi \
 --multi \
 --color=dark,hl:#ff2222 \
 "
@@ -52,6 +65,8 @@ alias fzf="fzf \
 alias fzp="fzf \
 --preview 'batcat --color=always --style=numbers --line-range=:500 {}' \
 "
+
+alias watch='watch --color'
 
 alias grep='grep --color=auto'
 
@@ -71,3 +86,5 @@ alias mosh='LC_ALL="en_US.UTF-8" mosh'
 alias hh=hstr
 
 alias motion='motion -m -c $HOME/.config/motion/motion.conf'
+
+alias vim=nvim
