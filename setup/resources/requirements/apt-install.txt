@@ -49,6 +49,7 @@ mtr                    # Better traceroute
 ncdu                   # ncurses disk usage viewer
 net-tools              # Networking tools
 nmap                   # Net/port scanner
+nvim                   # Text editor
 openscad               # Script based 3D CAD software
 playerctl              # Command-line utility and library for controlling media players
 remmina                # Remote desktop manager
