@@ -5,10 +5,9 @@
 # Section added by: clvLabs/dotfiles
 #
 
-# Set monitor positions in the desktop
 xrandr \
---output DVI-I-1 --auto --pos 0x1080 \
---output DP-3 --auto --pos 1920x0 \
---output DP-2 --auto --pos 5760x0 --rotate left
+--output DVI-I-1 --mode 1920x1080 --pos 0x0 \
+--output DP-2 --mode 2560x1440 --pos 1920x-350 --rotate normal \
+--output DP-1 --mode 1920x1080 --pos 4480x-400 --rotate left
 
 # ######################################################################

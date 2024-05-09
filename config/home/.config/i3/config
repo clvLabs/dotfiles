@@ -59,8 +59,8 @@ font pango:DejaVu Sans Mono Nerd Font Complete 10
 #  Monitors
 #
 set $mon-left DVI-I-1
-set $mon-main DP-3
-set $mon-right DP-2
+set $mon-main DP-2
+set $mon-right DP-1
 
 
 # ###############################################
