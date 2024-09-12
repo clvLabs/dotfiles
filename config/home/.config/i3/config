@@ -272,6 +272,9 @@ bindsym $mod+Print exec --no-startup-id gnome-screenshot -i
 bindsym Ctrl+$mod+$alt+e exec --no-startup-id setxkbmap es
 bindsym Ctrl+$mod+$alt+u exec --no-startup-id setxkbmap us
 
+# Yalo folder
+bindsym $mod+$alt+y exec --no-startup-id nautilus /home/tony/Documents/yalo/proyectos/clientes
+
 # ---------------------------------
 #
 #  Apps
@@ -310,6 +313,11 @@ bindsym $mod+c exec code -n
 
 # start inkscape
 bindsym $mod+$alt+i exec inkscape
+
+
+
+# Fastab-One windows
+for_window [title="Fastab-One.*"] floating enable
 
 
 # ---------------------------------
