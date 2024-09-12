@@ -24,6 +24,7 @@ BACKUP_FOLDERS="${BACKUP_FOLDERS} tony/src"
 
 RSYNC_BASE_PARAMS=""
 RSYNC_BASE_PARAMS="${RSYNC_BASE_PARAMS} --archive"
+RSYNC_BASE_PARAMS="${RSYNC_BASE_PARAMS} --copy-links"
 RSYNC_BASE_PARAMS="${RSYNC_BASE_PARAMS} --delete"
 RSYNC_BASE_PARAMS="${RSYNC_BASE_PARAMS} --human-readable"
 RSYNC_BASE_PARAMS="${RSYNC_BASE_PARAMS} --timeout=15"
@@ -96,6 +97,31 @@ function backup_folder {
 
 # ############################################################################
 #
+# zip backups (ony with DOBACKUP)
+#
+
+if [ ! -z $DOBACKUP ]; then
+
+  log_title -
+  log_title - [${APP_NAME}] Preparing/rotating zipped backups
+  log_title -
+  log_title - Running on [$(hostname)]
+  log_title - Started from ${SETUP_MEDIA_DIR}
+
+  zip -r ~/Documents/backups/yalo/telinetsrv-rotated/$(date +"%Y%m%d-%H%M%S")-yalo-backup.zip ~/Documents/yalo
+
+  # -- ROTATE BACKUP ZIPS --
+
+  find ~/Documents/backups/yalo/telinetsrv-rotated \
+    -maxdepth 1 -type f -name '*.zip' -print0 \
+    | sort -rz \
+    | tail -zn+11 \
+    | xargs -0 -n1 rm -v
+
+fi
+
+# ############################################################################
+#
 # Sync start
 #
 
@@ -136,7 +162,6 @@ if [ -z $NOUMOUNT ]; then
 else
   log_warning - SKIPPING backup device unmount
 fi
-
 
 log_success - ----------------------------------------------------------------------------
 log_success -
