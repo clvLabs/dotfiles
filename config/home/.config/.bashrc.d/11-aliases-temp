@@ -1,13 +1,5 @@
 # TEMPORARY Aliases
 
-# TunasDB query via API
-function sql {
-  _OLDPWD=$(pwd)
-  cd ${HOME}/src/dorna/tvgfx/tonyaguilar/sql-queries/
-  python3 -u query.py ${@}
-  cd ${_OLDPWD}
-}
-
 # led-panel-controller
 led () {
   curl -o /dev/null --silent "http://ledpanel1-lab.local/set/level?value=${1}"
