@@ -29,5 +29,16 @@
 [includeIf "gitdir:~/src/dorna/"]
     path = ~/src/dorna/.gitconfig
 
+[includeIf "gitdir:/media/nvme-1tb/tony/src/dorna/"]
+    path = /media/nvme-1tb/tony/src/dorna/.gitconfig
+
+[includeIf "gitdir:~/src/alkamel/"]
+    path = ~/src/alkamel/.gitconfig
+
+[includeIf "gitdir:/media/nvme-1tb/tony/src/alkamel/"]
+    path = /media/nvme-1tb/tony/src/alkamel/.gitconfig
+
 [protocol "file"]
 	allow = always
+[init]
+	defaultBranch = master
