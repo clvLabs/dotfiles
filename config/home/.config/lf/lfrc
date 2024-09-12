@@ -141,13 +141,18 @@ map ob &brave-browser "$f" # Open with Brave
 map oc &code "$f" # Open with VSCode
 map od &xdg-open $f # Open with default program
 map oe $$EDITOR "$f" # Open with default editor
-map oi &sxiv -tfpqrs f "$PWD" # Open with sxiv
+map oi &sxiv -tfpqrs f "$f" # Open with sxiv
 map ol $echo "$fx" | tr "\n" " " | xargs batcat --style=full --paging=always  # Open with less
-map om &mpv "$f"  # Open with mpv
+map omn &mpv "$f"  # Open with mpv (normal)
+map omr &mpv --video-rotate=90 "$f"  # Open with mpv (right)
+map omd &mpv --video-rotate=180 "$f"  # Open with mpv (down)
+map oml &mpv --video-rotate=270 "$f"  # Open with mpv (left)
+map omh &mpv --vf=lavfi="hflip" "$f"  # Open with mpv (hflip)
+map omv &mpv --vf=lavfi="vflip" "$f"  # Open with mpv (vflip)
 map on $nano "$f" # Open with nano
 map ot &nautilus "$f" # Open with nautilus
 map ov $vim "$f" # Open with vim
-map o4 $find -type f -name "*mp4" -exec mpv {} \+ # Open all mp4 files in folder
+map o4 $find "$f" -type f -name "*mp4" -exec mpv {} \+ # Open all mp4 files in selected folder
 
 # Calc all dir sizes
 cmd _calc_all_dir_sizes : {{
