@@ -38,7 +38,6 @@ hstr                   # History search utility
 httpie                 # HTTP utility
 i3                     # i3 tiling window manager
 i3lock                 # i3 screen locker
-inkscape               # Vector graphics software
 jq                     # Command-line JSON processor
 kmag                   # On-screen magnifier
 libreoffice            # Office suite
@@ -50,8 +49,6 @@ mtr                    # Better traceroute
 ncdu                   # ncurses disk usage viewer
 net-tools              # Networking tools
 nmap                   # Net/port scanner
-nvim                   # Text editor
-openscad               # Script based 3D CAD software
 playerctl              # Command-line utility and library for controlling media players
 remmina                # Remote desktop manager
 rename                 # Perl extension for renaming multiple files
