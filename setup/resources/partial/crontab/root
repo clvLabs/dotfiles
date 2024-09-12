@@ -4,7 +4,4 @@
 # Section added by: clvLabs/dotfiles
 #
 
-# Try to turn off headphone leds every minute
-* * * * * /home/tony/bin/ledoff 2>&1 > /dev/null
-
 # ######################################################################
