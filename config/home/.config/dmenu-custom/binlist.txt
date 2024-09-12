@@ -28,6 +28,7 @@ last-popup-replay
 libreoffice
 lightburn
 mpv
+mqtt-explorer
 musescore
 nautilus
 obs
