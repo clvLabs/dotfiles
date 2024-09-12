@@ -22,6 +22,7 @@ spacenavd              # Driver for 6-dof input devices
 
 # System tools / utilities
 bat                    # A cat clone with wings
+barrier                # KVM emulation software
 blueman                # Bluetooth utilities
 curl                   # HTTP utility
 cifs-utils             # Utilities for managing mounts of CIFS network file systems

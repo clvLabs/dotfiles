@@ -2,6 +2,7 @@ alacritty
 alsamixer
 amixer
 audacity
+barrier
 blender
 blueman-manager
 brave-browser
