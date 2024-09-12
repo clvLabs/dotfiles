@@ -83,8 +83,12 @@ alias ssh='TERM=xterm-256color ssh'
 
 alias mosh='LC_ALL="en_US.UTF-8" mosh'
 
-alias hh=hstr
+alias hh='hstr'
 
 alias motion='motion -m -c $HOME/.config/motion/motion.conf'
 
-alias vim=nvim
+alias vim='nvim'
+
+alias less='less -i'
+
+alias ncal='ncal -Mw'
