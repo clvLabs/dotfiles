@@ -40,8 +40,24 @@ view() {
 	done
 }
 
+HELP_TXT="
+Extra key bindings
+-------------------
+C-x C-h: help
+C-x C-x: copy (one line)
+C-x C-c: copy (multiline)
+C-x C-g: gimp
+C-x C-b: brave
+C-x C-i: sxiv
+"
 
 case "$1" in
+
+  # ------ Help
+  "C-h")
+    notify-send "sxiv" "${HELP_TXT}"
+    ;;
+
 
   # ------ Copy filenames (one line)
   "C-x")
