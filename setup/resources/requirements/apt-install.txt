@@ -24,11 +24,13 @@ spacenavd              # Driver for 6-dof input devices
 bat                    # A cat clone with wings
 barrier                # KVM emulation software
 blueman                # Bluetooth utilities
+chafa                  # Terminal image viewer
 curl                   # HTTP utility
 cifs-utils             # Utilities for managing mounts of CIFS network file systems
 elinks                 # CLI www browser
 entr                   # File watcher
 exa                    # ls substitution
+ffmpegthumbnailer      # Video thumbnail generator
 flameshot              # Screen capture utility
 ftp                    # Classical file transfer client
 fzf                    # Fuzzy finder
