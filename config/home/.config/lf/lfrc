@@ -137,9 +137,9 @@ map cAp _copy_ALL_files_path
 
 # [o]pen commands
 
-cmd _open_with_sxiv ${{
-  [[ -f "$f" ]] && sxiv -fpqrs f "$f";
-  [[ -d "$f" ]] && sxiv -tfpqrs f "$f";
+cmd _open_with_sxiv &{{
+  [[ -f "$f" ]] && sxiv -pqrs f "$f"
+  [[ -d "$f" ]] && sxiv -tpqrs f "$f"
 }}
 
 map oa &mimeopen --ask "$f" # Open with (ask)
@@ -148,7 +148,7 @@ map oc &code "$f" # Open with VSCode
 map od &xdg-open $f # Open with default program
 map oe $$EDITOR "$f" # Open with default editor
 map oi _open_with_sxiv # Open with sxiv
-map oI &sxiv -tfpqrs f "$PWD" # Open current folder with sxiv
+map oI &sxiv -tpqrs f "$PWD" # Open current folder with sxiv
 map ol $echo "$fx" | tr "\n" " " | xargs batcat --style=full --paging=always  # Open with less
 map om &mpv "$f"  # Open with mpv
 map oMr &mpv --video-rotate=90 "$f"  # Open with mpv (right)
