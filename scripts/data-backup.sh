@@ -182,6 +182,10 @@ RUNCMD "sudo cp ${LOG_TEMPFILE} ${LAST_SYNC_LOG_FILE}"
 RUNCMD "sudo chown ${USER}:${USER} ${LAST_SYNC_LOG_FILE}"
 
 
+if [ -z $NO_NOTIFY ]; then
+  notify-send "data-backup" "Backup process FINISHED, please check output"
+fi
+
 if [ -z $DEBUG ]; then
   less --raw-control-chars --force ${LAST_SYNC_LOG_FILE}
 fi
