@@ -1,5 +1,8 @@
 # Aliases
 
+# Please don't overwrite by default :)
+alias mv='mv --no-clobber'
+
 if command -v exa >/dev/null 2>&1
 then
   # If exa is installed, use exa aliases
