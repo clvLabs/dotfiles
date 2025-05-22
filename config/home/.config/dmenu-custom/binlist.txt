@@ -24,6 +24,7 @@ hp-scan
 inkscape
 kdenlive
 kmag
+last-data-backup
 last-popup-replay
 libreoffice
 lightburn
