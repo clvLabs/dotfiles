@@ -1,3 +1,3 @@
 #!/bin/bash
-pwd | clipcp
+pwd | tr -d '\n' | clipcp
 
