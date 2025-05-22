@@ -93,15 +93,17 @@ map r set reverse!
 map DD delete
 
 # [b]ash commands
-map b $ns # Open terminal in new window
+map b &ns # Open terminal in new window
 
 # [g]o commands
+map gb cd ~/Documents/btu-k/btu-kam # Go to btu-k folder
 map gc cd ~/.config # Go to config folder
 map gd cd ~/Downloads # Go to downloads folder
 map gh cd ~ # Go to home folder
 map gl cd ~/Documents/cnc/laser/projects # Go to laser folder
 map gp cd ~/src/python # Go to python folder
 map gt cd ~/src/dorna/tvgfx # Go to tvgfx folder
+map gy cd ~/Documents/yalo/proyectos/clientes # Go to yalo folder
 
 # [c]opy commands
 cmd _copy_current_path ${{
@@ -159,7 +161,7 @@ map oMv &mpv --vf=lavfi="vflip" "$f"  # Open with mpv (vflip)
 map on $nano "$f" # Open with nano
 map ot &nautilus "$f" # Open with nautilus
 map ov $vim "$f" # Open with vim
-map o4 $find "$f" -type f -name "*mp4" -exec mpv {} \+ # Open all mp4 files in selected folder
+map o4 &find "$f" -type f -name "*mp4" -exec mpv {} \+ # Open all mp4 files in selected folder
 
 # Calc all dir sizes
 cmd _calc_all_dir_sizes : {{
