@@ -12,8 +12,10 @@ cool-retro-terminal
 cura
 discord
 flameshot
+font-manager
 fontforge
 freecad
+gambas3
 gimp
 gnome-characters
 gnome-control-center
@@ -34,7 +36,9 @@ musescore
 nautilus
 obs
 openscad
+pavucontrol
 postman
+pulseview
 remmina
 reset-display
 simplescreenrecorder
@@ -44,3 +48,4 @@ sqlitebrowser
 teamviewer
 virt-manager
 vlc
+winbox
