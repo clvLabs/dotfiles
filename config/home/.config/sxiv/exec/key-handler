@@ -43,26 +43,21 @@ view() {
 HELP_TXT="
 Extra key bindings
 -------------------
-C-x C-h: help
-C-x C-x: copy (one line)
+C-x C-b: brave-brower
 C-x C-c: copy (multiline)
+C-x C-d: duplicate
 C-x C-g: gimp
-C-x C-b: brave
+C-x C-h: help
 C-x C-i: sxiv
+C-x C-l: lf
+C-x C-x: copy (one line)
 "
 
 case "$1" in
 
-  # ------ Help
-  "C-h")
-    notify-send "sxiv" "${HELP_TXT}"
-    ;;
-
-
-  # ------ Copy filenames (one line)
-  "C-x")
-    xclip -in -filter | tr '\n' ' ' | xclip -in -selection clipboard
-    notify-send "sxiv" "Filenames copied to clipboard (one line)"
+  # ------ brave-brower
+  "C-b")
+    tr '\n' '\0' | xargs -0 brave-browser
     ;;
 
   # ------ Copy filenames (multiline)
@@ -71,19 +66,41 @@ case "$1" in
     notify-send "sxiv" "Filenames copied to clipboard (multiline)"
     ;;
 
+  # ------ Duplicate window
+  "C-d")
+    read file
+    DN=$(dirname "$file")
+    sxiv -tprs f "${DN}" &
+    disown
+    ;;
+
+  # ------ Help
+  "C-h")
+    notify-send "sxiv" "${HELP_TXT}"
+    ;;
+
   # ------ gimp
   "C-g")
     tr '\n' '\0' | xargs -0 gimp
     ;;
 
-  # ------ brave-brower
-  "C-b")
-    tr '\n' '\0' | xargs -0 brave-browser
-    ;;
-
   # ------ sxiv
   "C-i")
     view
+    ;;
+
+  # ------ lf
+  "C-l")
+    read file
+    DN=$(dirname "$file")
+    lf "${DN}" &
+    disown
+    ;;
+
+  # ------ Copy filenames (one line)
+  "C-x")
+    xclip -in -filter | tr '\n' ' ' | xclip -in -selection clipboard
+    notify-send "sxiv" "Filenames copied to clipboard (one line)"
     ;;
 
   # ------ rotate 270
