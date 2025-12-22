@@ -79,3 +79,7 @@ virt-manager
 # Fonts
 fonts-firacode
 fonts-font-awesome
+
+# Python3 system-wide packages
+py3status              # Take control of your i3bar
+python3-pydbus         # Required by py3status

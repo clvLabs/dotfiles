@@ -1,9 +1,0 @@
-# pip-install.txt
-# List of software to be installed using pip after OS install
-
-requests               # Python HTTP for Humans
-py3status              # Take control of your i3bar
-pydbus                 # Required by py3status
-pygi                   # Required by py3status
-PyYAML                 # YAML parser
-serial                 # A framework for serializing/deserializing JSON/YAML/XML into python class instances and vice versa
