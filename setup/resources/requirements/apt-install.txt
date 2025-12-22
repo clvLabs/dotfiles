@@ -7,7 +7,6 @@ apt-transport-https
 ca-certificates
 gnupg
 lsb-release
-software-properties-common
 
 # Dev tools
 build-essential
