@@ -28,7 +28,7 @@ curl                   # HTTP utility
 cifs-utils             # Utilities for managing mounts of CIFS network file systems
 #elinks                 # CLI www browser
 entr                   # File watcher
-exa                    # ls substitution
+eza                    # ls/exa substitution
 ffmpegthumbnailer      # Video thumbnail generator
 flameshot              # Screen capture utility
 freerdp2-x11           # Remote desktop client
