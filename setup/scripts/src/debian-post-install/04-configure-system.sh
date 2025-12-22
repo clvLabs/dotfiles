@@ -26,7 +26,7 @@ log_highlight - ----------------------------------------------------------------
 log_highlight -
 log_highlight - [${APP_NAME}] Creating SSH key
 log_highlight -
-RUNCMD "ssh-keygen -t rsa -C \'${SSH_KEY_EMAIL}\'"
+RUNCMD "ssh-keygen -C \'${SSH_KEY_EMAIL}\'"
 
 log_highlight - ----------------------------------------------------------------------------
 log_highlight -

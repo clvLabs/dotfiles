@@ -22,18 +22,20 @@ spacenavd              # Driver for 6-dof input devices
 
 # System tools / utilities
 bat                    # A cat clone with wings
-barrier                # KVM emulation software
+#barrier                # KVM emulation software
 blueman                # Bluetooth utilities
 chafa                  # Terminal image viewer
 curl                   # HTTP utility
 cifs-utils             # Utilities for managing mounts of CIFS network file systems
-elinks                 # CLI www browser
+#elinks                 # CLI www browser
 entr                   # File watcher
 exa                    # ls substitution
 ffmpegthumbnailer      # Video thumbnail generator
 flameshot              # Screen capture utility
+freerdp2-x11           # Remote desktop client
 ftp                    # Classical file transfer client
 fzf                    # Fuzzy finder
+gambas3                # Programming language
 gimp                   # Image manipulation software
 libhidapi-dev          # Multi-Platform library for communication with HID devices
 hstr                   # History search utility
@@ -44,16 +46,18 @@ jq                     # Command-line JSON processor
 kmag                   # On-screen magnifier
 libreoffice            # Office suite
 libnotify-bin          # Desktop notifications
-mosh                   # ssh substitution
-motion                 # Webcam motion detector/video streamer
+lmms                   # Linux multimedia studio (music composition)
+#mosh                   # ssh substitution
+#motion                 # Webcam motion detector/video streamer
 mpv                    # Movie player
 mtr                    # Better traceroute
+musescore              # Sheet music editor
 ncdu                   # ncurses disk usage viewer
 net-tools              # Networking tools
 nmap                   # Net/port scanner
 playerctl              # Command-line utility and library for controlling media players
-remmina                # Remote desktop manager
-rename                 # Perl extension for renaming multiple files
+#remmina                # Remote desktop manager
+#rename                 # Perl extension for renaming multiple files
 rsync                  # File-copying tool
 openssh-server         # SSH server
 sxiv                   # Image viewer

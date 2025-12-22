@@ -1,13 +1,16 @@
 alacritty
 alsamixer
 amixer
+anydesk
 audacity
 barrier
 blender
 blueman-manager
 brave-browser
 bt
+clonehero
 code
+colorcp
 cool-retro-terminal
 cura
 discord
@@ -30,6 +33,7 @@ last-data-backup
 last-popup-replay
 libreoffice
 lightburn
+lmms
 mpv
 mqtt-explorer
 musescore
@@ -49,3 +53,4 @@ teamviewer
 virt-manager
 vlc
 winbox
+yow

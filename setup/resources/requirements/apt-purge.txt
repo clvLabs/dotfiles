@@ -4,8 +4,9 @@
 # Based on: github.com/LostByteSoft/Debian-10
 
 # Junk accessories
-cheese
 debian-reference-common
+debian-reference-es
+debian-reference-it
 deja-dup
 gedit
 gnome-calculator
@@ -18,11 +19,11 @@ gnome-weather
 gnote
 goldendict
 khmerconverter
-yelp
 
 # Junk audio
 brasero
 brasero-common
+cheese
 gnome-music
 gnome-sound-recorder
 rhythbox
@@ -53,15 +54,21 @@ tali
 
 # Junk graphics
 eog
+gimp-help-common
+gimp-help-sv
 shotwell
 simple-scan
 
 # Junk internet
+deluge
+deluge-common
+deluge-gtk
 epiphany-browser
 epiphany-browser-data
 firefox-esr
 hexchat
 pidgin
+remmina
 thunderbird
 transmission-gtk
 vinagre
@@ -74,11 +81,29 @@ fbreader
 anthy
 kasumi
 
+# Junk system
+uim
+uim-data
+uim-mozc
+uim-xim
+im-config
+mozc-data
+mozc-utils-gui
+eject
+vino
+yelp
+yelp-xsl
+id3
+mdadm
+
 # Junk administration
+gnome-logs
+gnome-software
 malcontent
 mlterm
 mlterm-common
 mlterm-tiny
+xiterm+thai
 xterm
 
 # Remove before installing docker

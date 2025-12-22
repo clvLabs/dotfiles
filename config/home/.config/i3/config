@@ -319,6 +319,8 @@ bindsym $mod+$alt+i exec inkscape
 # Fastab-One windows
 for_window [title="Fastab-One.*"] floating enable
 
+# Yad windows should float
+for_window [class="Yad"] floating enable
 
 # ---------------------------------
 #
@@ -334,13 +336,15 @@ bindsym $mod+$alt+period \
 bindsym $mod+$alt+z \
   workspace $ws10; \
   exec alacritty --option font.size=10 --command clock; \
+  exec sleep 0.5; \
   exec alacritty --option font.size=6 --command mtr --displaymode 2 --curses 8.8.8.8
 
 # x - comms (work)
 bindsym $mod+$alt+x \
   workspace $ws18; \
-  exec discord; \
+  exec brave-browser --new-window https://outlook.office.com/mail/; \
   exec brave-browser --new-window https://teams.microsoft.com/
+  # exec discord; \
 
 # c - comms (social)
 bindsym $mod+$alt+c \
@@ -354,9 +358,9 @@ bindsym $mod+$alt+m \
   exec spotify
 
 # n - remmina
-bindsym $mod+$alt+n \
-  workspace $ws11; \
-  exec remmina --icon
+# bindsym $mod+$alt+n \
+#   workspace $ws11; \
+#   exec remmina --icon
 
 # t - teamviewer
 bindsym $mod+$alt+t \
@@ -374,9 +378,9 @@ bindsym $mod+$alt+w exec --no-startup-id bash -c "true \
 && xdotool key super+alt+x && sleep 6 \
 && xdotool key super+alt+c && sleep 3 \
 && xdotool key super+alt+m && sleep 3 \
-&& xdotool key super+alt+n && sleep 1 \
 && xdotool key super+alt+t && sleep 1 \
 "
+# && xdotool key super+alt+n && sleep 1 \
 
 # ---------------------------------
 #
