@@ -2,9 +2,9 @@ log_highlight -
 log_highlight - [${APP_NAME}] Installing blender
 log_highlight -
 
-_MAJOR=4
+_MAJOR=5
 _MINOR=0
-_PATCH=2
+_PATCH=1
 
 PACKAGE="blender-${_MAJOR}.${_MINOR}.${_PATCH}-linux-x64"
 SOURCE_PATH="https://download.blender.org/release/Blender${_MAJOR}.${_MINOR}"

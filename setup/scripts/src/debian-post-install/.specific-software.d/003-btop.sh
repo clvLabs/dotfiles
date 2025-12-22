@@ -2,7 +2,7 @@ log_highlight -
 log_highlight - [${APP_NAME}] Installing btop
 log_highlight -
 
-VERSION="1.2.9"
+VERSION="1.4.5"
 PLATFORM="x86_64-linux-musl"
 
 SOURCE_PATH="https://github.com/aristocratos/btop/releases/download/v${VERSION}"

@@ -2,7 +2,7 @@ log_highlight -
 log_highlight - [${APP_NAME}] Installing lf
 log_highlight -
 
-VERSION="r27"
+VERSION="r40"
 PLATFORM="linux-amd64"
 
 SOURCE_PATH="https://github.com/gokcehan/lf/releases/download/${VERSION}"

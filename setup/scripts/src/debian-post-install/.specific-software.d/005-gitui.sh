@@ -2,7 +2,7 @@ log_highlight -
 log_highlight - [${APP_NAME}] Installing gitui
 log_highlight -
 
-VERSION="0.21.0"
+VERSION="0.28.0"
 PLATFORM="linux-musl"
 
 SOURCE_PATH="https://github.com/extrawurst/gitui/releases/download/v${VERSION}"

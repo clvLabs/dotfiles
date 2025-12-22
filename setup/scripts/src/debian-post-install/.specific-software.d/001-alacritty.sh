@@ -2,7 +2,7 @@ log_highlight -
 log_highlight - [${APP_NAME}] Installing alacritty
 log_highlight -
 
-VERSION="0.11.0-rc2-1"
+VERSION="0.12.0-1"
 PLATFORM="amd64_bullseye"
 
 SOURCE_PATH="https://github.com/barnumbirr/alacritty-debian/releases/download/v${VERSION}"
