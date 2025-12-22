@@ -13,6 +13,6 @@ TEMP_FOLDER=$(mktemp -d -t ${APP_NAME}-btop-XXXXXX)
 RUNCMD "wget --no-verbose -O ${TEMP_FOLDER}/${SOURCE_FILE} ${SOURCE_PATH}/${SOURCE_FILE}"
 RUNCMD "mkdir -p ${TEMP_FOLDER}/extracted"
 RUNCMD "tar -xjf ${TEMP_FOLDER}/${SOURCE_FILE} -C ${TEMP_FOLDER}/extracted"
-RUNCMD "cd ${TEMP_FOLDER}/extracted; ./install.sh"
-RUNCMD "cd ${TEMP_FOLDER}/extracted; ./setuid.sh"
+RUNCMD "cd ${TEMP_FOLDER}/extracted/btop; ./install.sh"
+RUNCMD "cd ${TEMP_FOLDER}/extracted/btop; ./setuid.sh"
 RUNCMD "rm -rf ${TEMP_FOLDER}"

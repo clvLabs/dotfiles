@@ -3,7 +3,7 @@ log_highlight - [${APP_NAME}] Installing gitui
 log_highlight -
 
 VERSION="0.28.0"
-PLATFORM="linux-musl"
+PLATFORM="linux-x86_64"
 
 SOURCE_PATH="https://github.com/extrawurst/gitui/releases/download/v${VERSION}"
 SOURCE_FILE="gitui-${PLATFORM}.tar.gz"

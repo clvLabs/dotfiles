@@ -20,6 +20,7 @@ python3-pip
 spacenavd              # Driver for 6-dof input devices
 
 # System tools / utilities
+alacritty              # Fast, cross-platform, OpenGL terminal emulator
 bat                    # A cat clone with wings
 #barrier                # KVM emulation software
 blueman                # Bluetooth utilities
@@ -41,6 +42,7 @@ hstr                   # History search utility
 httpie                 # HTTP utility
 i3                     # i3 tiling window manager
 i3lock                 # i3 screen locker
+inkscape               # Vector drawing software
 jq                     # Command-line JSON processor
 kmag                   # On-screen magnifier
 libreoffice            # Office suite
