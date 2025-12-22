@@ -31,7 +31,7 @@ entr                   # File watcher
 eza                    # ls/exa substitution
 ffmpegthumbnailer      # Video thumbnail generator
 flameshot              # Screen capture utility
-freerdp2-x11           # Remote desktop client
+freerdp3-x11           # Remote desktop client
 ftp                    # Classical file transfer client
 fzf                    # Fuzzy finder
 gambas3                # Programming language
