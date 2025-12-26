@@ -1,0 +1,171 @@
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[[keyboard.bindings]]
+action = "Quit"
+key = "Q"
+mods = "Super"
+
+[colors.bright]
+black = "0x696969"
+blue = "0x007FFF"
+cyan = "0x00CCCC"
+green = "0x03C03C"
+magenta = "0xFF1493"
+red = "0xFF2424"
+white = "0xFFFAFA"
+yellow = "0xFDFF00"
+
+[colors.normal]
+black = "0x10100E"
+blue = "0x0087BD"
+cyan = "0x20B2AA"
+green = "0x009F6B"
+magenta = "0x9A4EAE"
+red = "0xFF0000"
+white = "0xC6C6C4"
+yellow = "0xFFD700"
+
+[colors.primary]
+background = "0x10100E"
+foreground = "0xC6C6C4"
+
+#[custom-color-schemes.blood-moon.bright]
+#black = "0x696969"
+#blue = "0x007FFF"
+#cyan = "0x00CCCC"
+#green = "0x03C03C"
+#magenta = "0xFF1493"
+#red = "0xFF2424"
+#white = "0xFFFAFA"
+#yellow = "0xFDFF00"
+#
+#[custom-color-schemes.blood-moon.normal]
+#black = "0x10100E"
+#blue = "0x0087BD"
+#cyan = "0x20B2AA"
+#green = "0x009F6B"
+#magenta = "0x9A4EAE"
+#red = "0xFF0000"
+#white = "0xC6C6C4"
+#yellow = "0xFFD700"
+#
+#[custom-color-schemes.blood-moon.primary]
+#background = "0x10100E"
+#foreground = "0xC6C6C4"
+#
+#[custom-color-schemes.dracula.bright]
+#black = "0x4d4d4d"
+#blue = "0xcaa9fa"
+#cyan = "0x9aedfe"
+#green = "0x5af78e"
+#magenta = "0xff92d0"
+#red = "0xff6e67"
+#white = "0xe6e6e6"
+#yellow = "0xf4f99d"
+#
+#[custom-color-schemes.dracula.cursor]
+#cursor = "CellForeground"
+#text = "CellBackground"
+#
+#[custom-color-schemes.dracula.dim]
+#black = "0x14151b"
+#blue = "0x4d5b86"
+#cyan = "0x59dffc"
+#green = "0x1ef956"
+#magenta = "0xff46b0"
+#red = "0xff2222"
+#white = "0xe6e6d1"
+#yellow = "0xebf85b"
+#
+#[custom-color-schemes.dracula.line_indicator]
+#background = "None"
+#foreground = "None"
+#
+#[custom-color-schemes.dracula.normal]
+#black = "0x000000"
+#blue = "0xbd93f9"
+#cyan = "0x8be9fd"
+#green = "0x50fa7b"
+#magenta = "0xff79c6"
+#red = "0xff5555"
+#white = "0xbfbfbf"
+#yellow = "0xf1fa8c"
+#
+#[custom-color-schemes.dracula.primary]
+#background = "0x282a36"
+#foreground = "0xf8f8f2"
+#
+#[custom-color-schemes.dracula.search.bar]
+#background = "0x282a36"
+#foreground = "0xf8f8f2"
+#
+#[custom-color-schemes.dracula.search.focused_match]
+#background = "0xffb86c"
+#foreground = "0x44475a"
+#
+#[custom-color-schemes.dracula.search.matches]
+#background = "0x50fa7b"
+#foreground = "0x44475a"
+#
+#[custom-color-schemes.dracula.selection]
+#background = "0x44475a"
+#text = "CellForeground"
+#
+#[custom-color-schemes.dracula.vi_mode_cursor]
+#cursor = "CellForeground"
+#text = "CellBackground"
+#
+#[custom-color-schemes.hyper.bright]
+#black = "#808080"
+#blue = "#0066ff"
+#cyan = "#00ffff"
+#green = "#33ff00"
+#magenta = "#cc00ff"
+#red = "#fe0100"
+#white = "#FFFFFF"
+#yellow = "#feff00"
+#
+#[custom-color-schemes.hyper.cursor]
+#cursor = "#ffffff"
+#text = "#F81CE5"
+#
+#[custom-color-schemes.hyper.normal]
+#black = "#000000"
+#blue = "#0066ff"
+#cyan = "#00ffff"
+#green = "#33ff00"
+#magenta = "#cc00ff"
+#red = "#fe0100"
+#white = "#d0d0d0"
+#yellow = "#feff00"
+#
+#[custom-color-schemes.hyper.primary]
+#background = "#000000"
+#foreground = "#ffffff"
+
+[font]
+size = 14.0
+
+[font.bold]
+family = "DejaVuSansMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "DejaVuSansMono Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "DejaVuSansMono Nerd Font"
+style = "Regular"
+
+[mouse]
+hide_when_typing = false
+
+[selection]
+save_to_clipboard = true
+
+[window]
+decorations = "full"
+
+[keyboard]
