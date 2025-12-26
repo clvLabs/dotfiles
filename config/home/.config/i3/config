@@ -143,7 +143,7 @@ exec --no-startup-id bash -c "sleep 3 && xdotool key super+alt+z"
 bar {
   output $mon-main
   tray_output $mon-left
-  font pango:DejaVu Sans Mono Nerd Font Complete 16
+  font pango:DejaVu Sans Mono Nerd Font Complete 24
   status_command py3status
   colors {
     background #000000
@@ -161,7 +161,7 @@ bar {
 bar {
   output $mon-left
   tray_output $mon-left
-  font pango:DejaVu Sans Mono Nerd Font Complete 11
+  font pango:DejaVu Sans Mono Nerd Font Complete 20
   status_command py3status
   colors {
     background #000000
@@ -179,7 +179,7 @@ bar {
 bar {
   output $mon-right
   tray_output $mon-left
-  font pango:DejaVu Sans Mono Nerd Font Complete 11
+  font pango:DejaVu Sans Mono Nerd Font Complete 20
   status_command py3status
   colors {
     background #000000
