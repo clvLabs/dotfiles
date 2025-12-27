@@ -1,3 +1,4 @@
+aks-pc-rmt
 alacritty
 alsamixer
 amixer
