@@ -1,7 +1,7 @@
 export PATH="${HOME}/bin:${PATH}"
 export EDITOR=vim
 export PAGER="batcat --paging=always"
-export MANPAGER="sh -c 'col -bx | batcat --paging=always --language man --plain'"
+export MANPAGER="sh -c 'batcat --paging=always --language man --plain'"
 
 # FIX Windows drive's file color
 export LS_COLORS=${LS_COLORS}:'ow=0:'
