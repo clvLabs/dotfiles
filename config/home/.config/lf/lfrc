@@ -5,7 +5,7 @@ set drawbox
 # set hidden
 set number
 set icons
-set globsearch
+set searchmethod glob
 set incsearch
 set ignorecase
 set info size
