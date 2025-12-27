@@ -66,6 +66,7 @@ wget                   # HTTP utility
 # Audio / music
 lmms                   # Linux multimedia studio (music composition)
 musescore              # Sheet music editor
+pavucontrol            # PulseAudio graphical volume control
 playerctl              # Command-line utility and library for controlling media players
 pulseaudio-utils       # Utilities for audio control
 
