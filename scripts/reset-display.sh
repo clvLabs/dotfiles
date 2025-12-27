@@ -1,5 +1,5 @@
 #!/bin/bash
 xrandr \
---output DP-3 --mode 1920x1080 --pos 0x0 --rotate normal \
---output DP-1 --mode 2560x1440 --pos 1920x-350 --rotate normal \
---output DP-2 --mode 1920x1080 --pos 4480x-400 --rotate left
+--output DP-5 --mode 1920x1080 --pos 0x360 --rotate normal \
+--output DP-0 --mode 2560x1440 --pos 1920x0 --rotate normal \
+--output DP-2 --mode 1920x1080 --pos 4480x0 --rotate left

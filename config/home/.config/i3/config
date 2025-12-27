@@ -58,8 +58,8 @@ font pango:DejaVu Sans Mono Nerd Font Complete 10
 #
 #  Monitors
 #
-set $mon-left DP-3
-set $mon-main DP-1
+set $mon-left DP-5
+set $mon-main DP-0
 set $mon-right DP-2
 
 
@@ -143,7 +143,7 @@ exec --no-startup-id bash -c "sleep 3 && xdotool key super+alt+z"
 bar {
   output $mon-main
   tray_output $mon-left
-  font pango:DejaVu Sans Mono Nerd Font Complete 24
+  font pango:DejaVu Sans Mono Nerd Font Complete 14
   status_command py3status
   colors {
     background #000000
@@ -161,7 +161,7 @@ bar {
 bar {
   output $mon-left
   tray_output $mon-left
-  font pango:DejaVu Sans Mono Nerd Font Complete 20
+  font pango:DejaVu Sans Mono Nerd Font Complete 11
   status_command py3status
   colors {
     background #000000
@@ -179,7 +179,7 @@ bar {
 bar {
   output $mon-right
   tray_output $mon-left
-  font pango:DejaVu Sans Mono Nerd Font Complete 20
+  font pango:DejaVu Sans Mono Nerd Font Complete 11
   status_command py3status
   colors {
     background #000000
@@ -238,7 +238,7 @@ bindsym --whole-window --border $mod+Ctrl+$alt+button5 exec --no-startup-id pact
 #
 
 # start dmenu (program launcher)
-bindsym $mod+d exec "dmenu-bin -i"
+bindsym $mod+d exec "dmenu-bin -i -fn 'FiraCode-14'"
 
 # kill focused window
 bindsym $mod+Shift+q kill
