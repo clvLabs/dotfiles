@@ -35,6 +35,7 @@ libhidapi-dev          # Multi-Platform library for communication with HID devic
 hstr                   # History search utility
 i3                     # i3 tiling window manager
 i3lock                 # i3 screen locker
+libfuse2               # FUSE (Filesystem in Userspace) v2 (for compatibility with older AppImages)
 libreoffice            # Office suite
 libnotify-bin          # Desktop notifications
 ncdu                   # ncurses disk usage viewer
