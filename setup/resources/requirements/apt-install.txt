@@ -38,6 +38,7 @@ i3lock                 # i3 screen locker
 libfuse2               # FUSE (Filesystem in Userspace) v2 (for compatibility with older AppImages)
 libreoffice            # Office suite
 libnotify-bin          # Desktop notifications
+ncal                   # Calendar display
 ncdu                   # ncurses disk usage viewer
 #rename                 # Perl extension for renaming multiple files
 rsync                  # File-copying tool
